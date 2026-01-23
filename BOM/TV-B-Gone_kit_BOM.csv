@@ -1,0 +1,12 @@
+﻿Ref,Quantity,Manufacturer,Manufacturer Part Number,Description,Vendor,Vendor Part Number,Link
+B1,1,Keystone,2464,BATTERY HOLDER AA 3 CELL PC PIN,Digikey,36-2464-ND,https://www.digikey.de/en/products/detail/keystone-electronics/2464/303813
+"LED1, LED2",2,Everlight,IR333C/H0/L10/TR1-7(R ),IR EMITTER - THRU-HOLE,Digikey,1080-IR333C/H0/L10/TR1-7(R)CT-ND,https://www.digikey.de/en/products/detail/everlight-electronics-co-ltd/IR333C-H0-L10-TR1-7-R/12177240
+"LED3, LED4",2,Everlight,IR333-A,EMITTER IR 940NM 100MA RADIAL,Digikey,1080-1080-ND,https://www.digikey.de/en/products/detail/everlight-electronics-co-ltd/IR333-A/2675571
+MOD1,1,Shop1102186190 Store,ESP32-C3 Super Mini,ESP32-C3 Super Mini,Aliexpress,Color:  10PCS C3 MINI,https://de.aliexpress.com/item/1005009495310442.html
+Q1,1,Infineon,IRLU024NPBF,MOSFET N-CH 55V 17A IPAK,Digikey,IRLU024NPBF-ND,https://www.digikey.de/en/products/detail/infineon-technologies/IRLU024NPBF/812400
+"R1, R2, R3, R4",4,KOA Speer,MOSX1/2CT52RR47J,"RESISTOR, 0.47 OHM, 1/2W, 5%",Digikey,2019-MOSX1/2CT52RR47JCT-ND,https://www.digikey.de/en/products/detail/koa-speer-electronics-inc/MOSX1-2CT52RR47J/21680350
+R5,1,Stackpole,CF14JT1K00,"RESISTOR, 1K, 1/4W, 5%",Digikey,CF14JT1K00CT-ND,https://www.digikey.de/en/products/detail/stackpole-electronics-inc/CF14JT1K00/1741314
+R6,1,Stackpole,CF14JT47K0,"RESISTOR, 47K, 1/4W, 5%",Digikey,CF14JT47K0CT-ND,https://www.digikey.de/en/products/detail/stackpole-electronics-inc/CF14JT47K0/1741444
+S1,1,Omron,B3F-4005,"SWITCH TACTILE SPST-NO 0.05A 24V, YELLOW",Digikey,SW412-ND,https://www.digikey.de/en/products/detail/omron-electronics-inc-emc-div/B3F-4005/20679
+S2,1,Omron,B3F-4000,"SWITCH TACTILE SPST-NO 0.05A 24V, IVORY",Digikey,SW411-ND,https://www.digikey.de/en/products/detail/omron-electronics-inc-emc-div/b3f-4000/63961
+S3,1,C&K,OS102011MS2QN1,SWITCH SLIDE SPDT 100MA 12V,Digikey,CKN9565-ND,https://www.digikey.de/en/products/detail/c-k/OS102011MS2QN1/411602
