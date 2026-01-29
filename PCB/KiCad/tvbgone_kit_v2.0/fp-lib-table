@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TVBG_Library")(type "KiCad")(uri "${KIPRJMOD}/footprints_created_for_this_project/footprints/TVBG_Library.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,222 @@
+(footprint "Cap_Kemet_2.54_MLCC_through-hole"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Capacitor, 0.1\" spacing")
+	(property "Reference" "REF**"
+		(at -2.7 -2.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a63246a7-ef37-4688-9cf8-a2a656ce7b86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "Cap_Kemet_2.54_MLCC_through-hole"
+		(at -14.3 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "05ce1c26-8e80-4c20-b6e5-9ed9f6bbad7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07c99cd2-9aa2-4125-9687-6084ac996399")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "73bf3e91-bab2-48b4-b328-bc31cc7cba7f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a61944f2-1d72-4f8d-8352-e7ee3aa2fba5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.54 -1.59)
+		(end 2.54 -1.59)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b132125e-7f39-4860-9046-ec0577461646")
+	)
+	(fp_line
+		(start -2.54 1.59)
+		(end -2.54 -1.59)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd3f1813-549b-4f3b-bc42-81b66492f9b3")
+	)
+	(fp_line
+		(start 2.54 -1.59)
+		(end 2.54 1.59)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "74a94956-0f9e-4e05-bd35-0d20c4cb7459")
+	)
+	(fp_line
+		(start 2.54 1.59)
+		(end -2.54 1.59)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6b5100f8-4e74-41b2-b3ad-8fd9add607e5")
+	)
+	(fp_line
+		(start -2.74 -1.79)
+		(end 2.74 -1.79)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cdc969df-4ec2-4398-a322-28c3577ec2d2")
+	)
+	(fp_line
+		(start -2.74 1.79)
+		(end -2.74 -1.79)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "40b68132-eb6f-48fe-b4e6-f7f4745af409")
+	)
+	(fp_line
+		(start 2.74 -1.79)
+		(end 2.74 1.79)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "621131b3-6637-446c-8ea3-6a74a4be5644")
+	)
+	(fp_line
+		(start 2.74 1.79)
+		(end -2.74 1.79)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8bc00fe9-edf8-4d95-b966-1e8df7f2677a")
+	)
+	(fp_line
+		(start -2.34 -1.39)
+		(end -2.34 1.39)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7c4e1680-ee3d-4c22-86f3-fe8b80672bd5")
+	)
+	(fp_line
+		(start -2.34 1.39)
+		(end 2.34 1.39)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "41f860a5-cb50-4322-b566-2321041abe81")
+	)
+	(fp_line
+		(start 2.34 -1.39)
+		(end -2.34 -1.39)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "08f15129-8e3b-420c-8aad-997238ade543")
+	)
+	(fp_line
+		(start 2.34 1.39)
+		(end 2.34 -1.39)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f9aa0f95-6751-4cd4-b2af-3de32b5245b6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3 1.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8e0809b3-c266-4ba8-9120-0e9b198eade8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "8c670731-b2a0-4709-8997-0a22db14407c")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "0f8fb154-f35a-4285-8e48-c72474dbecd2")
+	)
+)
