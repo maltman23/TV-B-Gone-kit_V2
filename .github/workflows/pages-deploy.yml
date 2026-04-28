@@ -1,0 +1,74 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "firmware/TV-B-Gone-ESP-IDF/**"
+      - "launchpad/**"
+      - "webflasher/**"
+      - ".github/workflows/pages-deploy.yml"
+
+# Required permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build firmware (ESP-IDF v5.5.1, esp32c3)
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.5.1
+          target: esp32c3
+          path: firmware/TV-B-Gone-ESP-IDF
+          command: idf.py set-target esp32c3 build
+
+      - name: Merge binaries into a single flashable image
+        run: |
+          pip install esptool --quiet
+          BUILD=firmware/TV-B-Gone-ESP-IDF/build
+          mkdir -p pages-staging
+          esptool --chip esp32c3 merge-bin \
+            --flash-mode dio \
+            --flash-freq 80m \
+            --flash-size 2MB \
+            -o pages-staging/tvbgone_esp32c3.bin \
+            0x0     "${BUILD}/bootloader/bootloader.bin" \
+            0x8000  "${BUILD}/partition_table/partition-table.bin" \
+            0x10000 "${BUILD}/TV-B-Gone-ESP-IDF.bin"
+
+      - name: Stage GitHub Pages content
+        run: |
+          cp -R webflasher/. pages-staging/
+          cp launchpad/config.toml pages-staging/
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-staging
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

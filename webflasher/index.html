@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TV-B-Gone Kit V2 Webflasher</title>
+    <meta
+      name="description"
+      content="Flash the TV-B-Gone Kit V2 firmware to an ESP32-C3 Super Mini directly from your browser."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="tv-shell">
+        <div class="tv-bezel">
+          <div class="tv-screen">
+            <div class="noise-layer" aria-hidden="true"></div>
+            <div class="scanlines" aria-hidden="true"></div>
+
+            <header class="screen-header">
+              <img
+                class="screen-logo"
+                src="./tvbg_logo_300-white.gif"
+                alt="TV-B-Gone"
+              />
+              <p class="screen-subtitle">TV-B-Gone Universal Remote - Turn OFF Virtually Any TV!</p>
+              <a class="screen-link" href="https://www.tvbgone.com/" target="_blank" rel="noreferrer">
+                tvbgone.com
+              </a>
+            </header>
+
+            <div class="screen-actions">
+              <button id="connect-button" class="button button-secondary" type="button">
+                Connect
+              </button>
+              <button id="flash-button" class="button button-primary" type="button" disabled>
+                Flash
+              </button>
+            </div>
+
+            <div class="screen-status" aria-live="polite">
+              <p class="status-line">
+                <span class="status-key">LINK</span>
+                <span id="connection-status" class="status-data">Not connected</span>
+              </p>
+              <p class="status-line">
+                <span class="status-key">CHIP</span>
+                <span id="chip-status" class="status-data">Waiting for device</span>
+              </p>
+              <p class="status-line">
+                <span class="status-key">IMAGE</span>
+                <span id="firmware-status" class="status-data">Ready to download</span>
+              </p>
+            </div>
+
+            <div class="progress-panel">
+              <div class="progress-header">
+                <span id="progress-label">Idle</span>
+                <span id="progress-percent">0%</span>
+              </div>
+              <progress id="flash-progress" max="100" value="0"></progress>
+            </div>
+
+            <div id="result-banner" class="result-banner" hidden></div>
+
+            <section class="monitor-panel">
+              <div class="monitor-header">
+                <h2>Monitor</h2>
+                <button id="clear-log-button" class="button button-ghost" type="button">
+                  Clear
+                </button>
+              </div>
+              <pre id="log-output" class="log-output" aria-live="polite"></pre>
+            </section>
+          </div>
+        </div>
+
+        <div class="tv-controls">
+          <div class="speaker-grille" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="tv-instruction">
+            Plug in the board. Press <strong>Connect</strong>. Then press <strong>Flash</strong>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

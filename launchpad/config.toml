@@ -1,0 +1,12 @@
+esp_toml_version = 1.0
+
+# Publicly accessible base URL where the firmware binaries are hosted (GitHub Pages)
+firmware_images_url = "https://pedrominatel.github.io/TV-B-Gone-kit_V2/"
+
+supported_apps = ["TV-B-Gone-V2"]
+
+[TV-B-Gone-V2]
+chipsets = ["ESP32-C3"]
+image.esp32-c3 = "tvbgone_esp32c3.bin"
+description = "TV-B-Gone Kit V2 — turns off almost any TV within 50 m using IR power-off codes. Press the NA button (green) to transmit the North America/Asia database, or the EU button (red) for Europe/Africa/Oceania. The visible LED blinks 3× for NA and 6× for EU at the start and end of each run."
+console_baudrate = 115200

@@ -1,0 +1,23 @@
+name: tvbgone_core_ci
+
+on:
+  push:
+    paths:
+      - "firmware/TV-B-Gone-ESP-IDF/**"
+      - ".github/workflows/tvbgone-core-ci.yml"
+  pull_request:
+    paths:
+      - "firmware/TV-B-Gone-ESP-IDF/**"
+      - ".github/workflows/tvbgone-core-ci.yml"
+
+jobs:
+  build-esp-idf-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: v5.5.1
+          target: esp32c3
+          path: firmware/TV-B-Gone-ESP-IDF
+          command: idf.py set-target esp32c3 build
