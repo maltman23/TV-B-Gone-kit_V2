@@ -3464,7 +3464,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "120"
 			(at 167.132 87.63 90)
 			(effects
 				(font
@@ -4381,7 +4381,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "120"
 			(at 179.832 87.63 90)
 			(effects
 				(font
@@ -4956,7 +4956,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "120"
 			(at 192.532 87.63 90)
 			(effects
 				(font
@@ -5032,7 +5032,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "120"
 			(at 205.232 87.63 90)
 			(effects
 				(font
