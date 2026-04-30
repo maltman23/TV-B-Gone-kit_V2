@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -74,24 +74,34 @@
 		(pad_to_mask_clearance 0)
 		(solder_mask_min_width 0.1016)
 		(allow_soldermask_bridges_in_footprints no)
-		(tenting front back)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_57557573)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 4)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -110,37 +120,11 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
 	)
-	(net 0 "")
-	(net 1 "GND")
-	(net 2 "Net-(S3-B)")
-	(net 3 "unconnected-(MOD1-3V3-Pad14)")
-	(net 4 "+4.5V")
-	(net 5 "unconnected-(MOD1-GPIO7-Pad3)")
-	(net 6 "unconnected-(MOD1-GPIO20-Pad7)")
-	(net 7 "unconnected-(MOD1-GPIO5-Pad1)")
-	(net 8 "Net-(MOD1-GPIO10)")
-	(net 9 "unconnected-(MOD1-GPIO0-Pad9)")
-	(net 10 "unconnected-(MOD1-GPIO21-Pad8)")
-	(net 11 "unconnected-(MOD1-GPIO6-Pad2)")
-	(net 12 "Net-(MOD1-GPIO9)")
-	(net 13 "Net-(MOD1-GPIO3)")
-	(net 14 "unconnected-(MOD1-GPIO1-Pad10)")
-	(net 15 "unconnected-(MOD1-GPIO2-Pad11)")
-	(net 16 "unconnected-(MOD1-GPIO8-Pad4)")
-	(net 17 "unconnected-(S3-C-Pad3)")
-	(net 18 "Net-(LED1-PadK)")
-	(net 19 "Net-(LED2-PadK)")
-	(net 20 "Net-(LED3-PadK)")
-	(net 21 "Net-(LED4-PadK)")
-	(net 22 "Net-(Q1-PadD)")
-	(net 23 "Net-(Q1-PadG)")
-	(net 24 "unconnected-(Q1-Thermal-Pad4)")
-	(net 25 "Net-(MOD1-GPIO4)")
 	(footprint "TVBG_Library:Turning_Off_TVs_pads_masked"
 		(layer "F.Cu")
 		(uuid "136c1cff-d856-4080-b145-658919c9b526")
@@ -194,6 +178,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy -2.259716 5.042449) (xy -2.266421 5.049155) (xy -2.273126 5.042449) (xy -2.266421 5.035744)
@@ -3194,6 +3179,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr board_only exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -6 -6)
 			(end -6 -3.7)
@@ -3513,7 +3499,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -3526,7 +3512,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "2")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -3539,7 +3525,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "Net-(MOD1-GPIO9)")
+			(net "Net-(MOD1-GPIO9)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -3552,7 +3538,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "Net-(MOD1-GPIO9)")
+			(net "Net-(MOD1-GPIO9)")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -3625,6 +3611,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy -13.533928 -0.493497) (xy -13.488011 -0.491767) (xy -13.488011 -0.444367) (xy -13.488011 -0.396968)
@@ -5703,6 +5690,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.3 -2.150001)
 			(end 6.300002 -2.15)
@@ -5860,7 +5848,7 @@
 			(drill oval 0.5 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "31b0a882-1fa1-4c19-98f1-091cf14d115d")
@@ -5871,7 +5859,7 @@
 			(drill oval 0.5 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "Net-(S3-B)")
+			(net "Net-(S3-B)")
 			(pinfunction "B")
 			(pintype "passive")
 			(uuid "af0de012-c565-4f02-a098-6cb13974b334")
@@ -5882,7 +5870,7 @@
 			(drill oval 0.5 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 17 "unconnected-(S3-C-Pad3)")
+			(net "unconnected-(S3-C-Pad3)")
 			(pinfunction "C")
 			(pintype "passive+no_connect")
 			(uuid "3d6307c4-5f23-4dbc-b7fa-f145e7e83be9")
@@ -5893,7 +5881,7 @@
 			(drill oval 0.7 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "Case")
 			(pintype "passive")
 			(uuid "52286b11-7390-4f2e-94ea-b5ba7b107b68")
@@ -5904,7 +5892,7 @@
 			(drill oval 0.7 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "Case")
 			(pintype "passive")
 			(uuid "66f3db8f-e6a1-41de-ad85-9ed2181db56f")
@@ -5994,6 +5982,7 @@
 		(path "/f5e6b6d8-d714-4f23-8885-5d42ce73f72a")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
 			(end -3.4 -0.5)
@@ -6234,7 +6223,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -6247,7 +6236,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "Net-(LED4-PadK)")
+			(net "Net-(LED4-PadK)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -6255,7 +6244,7 @@
 			(uuid "f2166628-7758-49a4-8832-dd87a9585e7b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack.step"
 			(offset
 				(xyz 1.3 0 0)
 			)
@@ -6320,6 +6309,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy 0.41877 0.721776) (xy 0.383017 0.785535) (xy 0.363675 0.83597) (xy 0.357013 0.883365) (xy 0.356873 0.892454)
@@ -6610,6 +6600,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy 0.534265 1.2201) (xy 0.544219 1.220159) (xy 0.552102 1.220274) (xy 0.55822 1.220459) (xy 0.562877 1.220727)
@@ -8961,6 +8952,7 @@
 		(path "/498ef38d-f5a2-4699-9bfb-9c26d7377fdc")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
 			(end -3.4 -0.5)
@@ -9201,7 +9193,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9214,7 +9206,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(LED3-PadK)")
+			(net "Net-(LED3-PadK)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9222,7 +9214,7 @@
 			(uuid "bb3c92d1-f6cc-4637-90ac-76f586931b2e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack.step"
 			(offset
 				(xyz 1.3 0 0)
 			)
@@ -9306,6 +9298,7 @@
 		(path "/2a251c77-5654-445a-80f9-3fb2132af0ed")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
 			(end -3.4 -0.5)
@@ -9546,7 +9539,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9559,7 +9552,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 18 "Net-(LED1-PadK)")
+			(net "Net-(LED1-PadK)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9567,9 +9560,9 @@
 			(uuid "59ddcf0d-31ab-452c-9b29-f6939192f163")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear.step"
 			(offset
-				(xyz 1.3 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -9651,6 +9644,7 @@
 		(path "/40f1c0ba-abfe-42c4-a134-4b3360177c46")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
 			(end -3.4 -0.5)
@@ -9859,11 +9853,11 @@
 			(layer "F.CrtYd")
 			(uuid "5046d769-bb9d-4e50-87cd-1109bb825409")
 		)
-		(fp_text user "-"
-			(at 0.6 2.2 0)
+		(fp_text user "+"
+			(at -2 2.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "9439393d-71f5-4cb9-8275-3abda730342e")
+			(uuid "eec276f4-f2e4-4296-8e36-4e8d48f18741")
 			(effects
 				(font
 					(size 1 1)
@@ -9872,11 +9866,11 @@
 				(justify left bottom)
 			)
 		)
-		(fp_text user "+"
-			(at -2 2.2 0)
+		(fp_text user "-"
+			(at 0.6 2.2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "eec276f4-f2e4-4296-8e36-4e8d48f18741")
+			(uuid "9439393d-71f5-4cb9-8275-3abda730342e")
 			(effects
 				(font
 					(size 1 1)
@@ -9891,7 +9885,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9904,7 +9898,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(LED2-PadK)")
+			(net "Net-(LED2-PadK)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -9912,7 +9906,7 @@
 			(uuid "38055f1c-3eea-4012-a374-c16e9cd4b5fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear.step"
 			(offset
 				(xyz 1.3 0 0)
 			)
@@ -9977,6 +9971,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy -6.90843 -2.160845) (xy -6.914701 -1.728676) (xy -7.300771 -1.722356) (xy -7.686842 -1.716037)
@@ -10414,6 +10409,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.14 1.5)
 			(end 0.05 1.5)
@@ -10584,7 +10580,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.139)
-			(net 13 "Net-(MOD1-GPIO3)")
+			(net "Net-(MOD1-GPIO3)")
 			(pinfunction "OUT")
 			(pintype "output")
 			(uuid "d1d36ee4-8bcf-47ff-a825-64286edc582f")
@@ -10595,7 +10591,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
 			(uuid "31dc6d30-ab97-4f27-a0cd-40c5541e1419")
@@ -10606,7 +10602,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "Vs")
 			(pintype "power_in")
 			(uuid "00e13d89-2ccf-476c-8f1e-902d346dd16a")
@@ -10677,6 +10673,7 @@
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy -2.472495 2.875908) (xy -2.474257 2.881399) (xy -2.483329 2.887671) (xy -2.49308 2.892321) (xy -2.497762 2.893235)
@@ -12450,6 +12447,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr board_only exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -6 -6)
 			(end -6 -3.7)
@@ -12769,7 +12767,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -12782,7 +12780,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "2")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -12795,7 +12793,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(MOD1-GPIO10)")
+			(net "Net-(MOD1-GPIO10)")
 			(pinfunction "K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -12808,7 +12806,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(MOD1-GPIO10)")
+			(net "Net-(MOD1-GPIO10)")
 			(pinfunction "A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
@@ -12903,6 +12901,7 @@
 		(path "/ce4ddd47-30c9-4988-a650-adb974df63ce")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.3)
 			(end -3.4 1.3)
@@ -13052,7 +13051,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -13064,7 +13063,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 23 "Net-(Q1-PadG)")
+			(net "Net-(Q1-PadG)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -13158,6 +13157,7 @@
 		(path "/caac2d4a-4b22-4b84-8ea0-7ba7faa94481")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
 			(end -5.949998 1.65)
@@ -13297,7 +13297,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "Net-(Q1-PadD)")
+			(net "Net-(Q1-PadD)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -13309,19 +13309,19 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "Net-(LED4-PadK)")
+			(net "Net-(LED4-PadK)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "164e0d2b-cf46-4780-871f-c0f575e92887")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.step"
 			(offset
 				(xyz -7.5 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.2 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
@@ -13404,6 +13404,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 58.5 24.1)
 			(end 58.499999 -24.100003)
@@ -13564,19 +13565,6 @@
 			(layer "B.Fab")
 			(uuid "37780082-3b49-4513-90eb-b8896b2969bb")
 		)
-		(fp_text user "+"
-			(at 52.324 -14.699998 0)
-			(layer "B.SilkS")
-			(uuid "e4fd16a1-efee-435e-9f6d-eb82fcd55465")
-			(effects
-				(font
-					(size 3.5 3.5)
-					(thickness 0.6)
-					(bold yes)
-				)
-				(justify mirror)
-			)
-		)
 		(fp_text user "-"
 			(at 52.578 -1.778 0)
 			(layer "B.SilkS")
@@ -13584,6 +13572,19 @@
 			(effects
 				(font
 					(size 3 3)
+					(thickness 0.6)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(fp_text user "+"
+			(at 52.324 -14.699998 0)
+			(layer "B.SilkS")
+			(uuid "e4fd16a1-efee-435e-9f6d-eb82fcd55465")
+			(effects
+				(font
+					(size 3.5 3.5)
 					(thickness 0.6)
 					(bold yes)
 				)
@@ -13621,7 +13622,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "Net-(S3-B)")
+			(net "Net-(S3-B)")
 			(pinfunction "+")
 			(pintype "power_out")
 			(uuid "ea299ede-a740-4646-80f0-7fd9d87c05d0")
@@ -13632,7 +13633,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "-")
 			(pintype "power_out")
 			(uuid "be1a720b-97e4-4e66-959d-b1d2122d5182")
@@ -13726,6 +13727,7 @@
 		(path "/857f011e-8adc-4319-b0d1-09bd96b25511")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.3)
 			(end -3.4 1.3)
@@ -13875,7 +13877,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 25 "Net-(MOD1-GPIO4)")
+			(net "Net-(MOD1-GPIO4)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -13887,7 +13889,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 23 "Net-(Q1-PadG)")
+			(net "Net-(Q1-PadG)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -13981,6 +13983,7 @@
 		(path "/8e307a47-74b1-436e-9075-1a47dc716e80")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
 			(end -5.949998 1.65)
@@ -14120,7 +14123,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "Net-(Q1-PadD)")
+			(net "Net-(Q1-PadD)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -14132,19 +14135,19 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(LED2-PadK)")
+			(net "Net-(LED2-PadK)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "9c987d16-f43a-49f5-ba95-9d68612a35fc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.step"
 			(offset
 				(xyz -7.5 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.2 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
@@ -14226,6 +14229,7 @@
 		(path "/400e5e18-9e90-4405-8230-1398b68a75ae")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
 			(end -5.949998 1.65)
@@ -14365,7 +14369,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "Net-(Q1-PadD)")
+			(net "Net-(Q1-PadD)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -14377,19 +14381,19 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 18 "Net-(LED1-PadK)")
+			(net "Net-(LED1-PadK)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "d4e03cb0-2195-4c24-95cf-6c00b1b9aaa8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.step"
 			(offset
 				(xyz -7.5 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.2 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
@@ -14470,6 +14474,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.69 2.39)
 			(end 5.69 9.61)
@@ -15001,7 +15006,7 @@
 			(at 2.29 7.433 90)
 			(size 5.7 6.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net 24 "unconnected-(Q1-Thermal-Pad4)")
+			(net "unconnected-(Q1-Thermal-Pad4)")
 			(pinfunction "Thermal")
 			(pintype "passive+no_connect")
 			(uuid "99107a4d-ae04-4fbb-bc03-ce85ccafc706")
@@ -15012,7 +15017,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "Net-(Q1-PadD)")
+			(net "Net-(Q1-PadD)")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "226b61f0-e1aa-44d9-b842-e4ed792c57bc")
@@ -15023,7 +15028,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 23 "Net-(Q1-PadG)")
+			(net "Net-(Q1-PadG)")
 			(pinfunction "G")
 			(pintype "input")
 			(uuid "e5c9b0d7-748b-4821-acfd-d1f253b8af42")
@@ -15034,7 +15039,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "S")
 			(pintype "passive")
 			(uuid "1a8099fe-5899-4ef2-929c-5bb5dd0e5547")
@@ -15127,6 +15132,7 @@
 		(path "/c2e60131-371d-453f-85f3-7eb7c7768959")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
 			(end -5.949998 1.65)
@@ -15266,7 +15272,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "Net-(Q1-PadD)")
+			(net "Net-(Q1-PadD)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -15278,19 +15284,19 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(LED3-PadK)")
+			(net "Net-(LED3-PadK)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "41b6878b-6754-4a35-938d-c4f40a39f2cf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal.step"
 			(offset
 				(xyz -7.5 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.2 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
@@ -15373,6 +15379,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr board_only exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.000001 -11.25)
 			(end -8.999999 -11.25)
@@ -16126,7 +16133,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 7 "unconnected-(MOD1-GPIO5-Pad1)")
+			(net "unconnected-(MOD1-GPIO5-Pad1)")
 			(pinfunction "GPIO5")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
@@ -16138,7 +16145,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "unconnected-(MOD1-GPIO6-Pad2)")
+			(net "unconnected-(MOD1-GPIO6-Pad2)")
 			(pinfunction "GPIO6")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
@@ -16150,7 +16157,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 5 "unconnected-(MOD1-GPIO7-Pad3)")
+			(net "unconnected-(MOD1-GPIO7-Pad3)")
 			(pinfunction "GPIO7")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
@@ -16162,7 +16169,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 16 "unconnected-(MOD1-GPIO8-Pad4)")
+			(net "unconnected-(MOD1-GPIO8-Pad4)")
 			(pinfunction "GPIO8")
 			(pintype "bidirectional+no_connect")
 			(uuid "17d08cc8-e65a-439a-ad59-9a66b60a000e")
@@ -16173,7 +16180,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "Net-(MOD1-GPIO9)")
+			(net "Net-(MOD1-GPIO9)")
 			(pinfunction "GPIO9")
 			(pintype "bidirectional")
 			(uuid "7e068f6a-70eb-4428-9996-189220e78e98")
@@ -16184,7 +16191,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(MOD1-GPIO10)")
+			(net "Net-(MOD1-GPIO10)")
 			(pinfunction "GPIO10")
 			(pintype "bidirectional")
 			(uuid "2cdaa668-5364-4a08-b25a-42a8cfe176d7")
@@ -16195,7 +16202,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "unconnected-(MOD1-GPIO20-Pad7)")
+			(net "unconnected-(MOD1-GPIO20-Pad7)")
 			(pinfunction "GPIO20")
 			(pintype "bidirectional+no_connect")
 			(uuid "53bc7341-b61d-4079-a855-e8640da6a532")
@@ -16206,7 +16213,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "unconnected-(MOD1-GPIO21-Pad8)")
+			(net "unconnected-(MOD1-GPIO21-Pad8)")
 			(pinfunction "GPIO21")
 			(pintype "bidirectional+no_connect")
 			(uuid "5d39a5d4-05a6-4e6b-a2eb-9400c65a143b")
@@ -16217,7 +16224,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "unconnected-(MOD1-GPIO0-Pad9)")
+			(net "unconnected-(MOD1-GPIO0-Pad9)")
 			(pinfunction "GPIO0")
 			(pintype "bidirectional+no_connect")
 			(uuid "ad2ef3b8-f264-4fac-8bff-fe56f91fcde5")
@@ -16228,7 +16235,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "unconnected-(MOD1-GPIO1-Pad10)")
+			(net "unconnected-(MOD1-GPIO1-Pad10)")
 			(pinfunction "GPIO1")
 			(pintype "bidirectional+no_connect")
 			(uuid "5a20bf76-f8ed-4960-8082-a09099d8ff1f")
@@ -16239,7 +16246,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 15 "unconnected-(MOD1-GPIO2-Pad11)")
+			(net "unconnected-(MOD1-GPIO2-Pad11)")
 			(pinfunction "GPIO2")
 			(pintype "bidirectional+no_connect")
 			(uuid "fe192c46-db19-4bf1-8467-7e1a1f38db73")
@@ -16250,7 +16257,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 13 "Net-(MOD1-GPIO3)")
+			(net "Net-(MOD1-GPIO3)")
 			(pinfunction "GPIO3")
 			(pintype "bidirectional")
 			(uuid "0422012c-8382-41e3-b5bc-94250f9e79ca")
@@ -16261,7 +16268,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 25 "Net-(MOD1-GPIO4)")
+			(net "Net-(MOD1-GPIO4)")
 			(pinfunction "GPIO4")
 			(pintype "bidirectional")
 			(uuid "79110d76-c2c4-4f11-8821-132464f71825")
@@ -16272,7 +16279,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 3 "unconnected-(MOD1-3V3-Pad14)")
+			(net "unconnected-(MOD1-3V3-Pad14)")
 			(pinfunction "3V3")
 			(pintype "power_in+no_connect")
 			(thermal_bridge_angle 0)
@@ -16284,7 +16291,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
 			(thermal_bridge_angle 0)
@@ -16296,7 +16303,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 4 "+4.5V")
+			(net "+4.5V")
 			(pinfunction "5V")
 			(pintype "power_in")
 			(thermal_bridge_angle 0)
@@ -16377,6 +16384,7 @@
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 4 0)
@@ -16457,7 +16465,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "Net-(S3-B)")
+			(net "Net-(S3-B)")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "87c5b9cb-b773-4201-98c4-bc120dfbfc1a")
@@ -16468,7 +16476,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "1e975297-39dd-4610-bb59-ff763f0e5143")
@@ -16561,6 +16569,7 @@
 		(path "/95015940-98a7-40f6-8a0a-278e3691a1a3")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.540002 -1.589999)
 			(end -2.540001 1.590001)
@@ -16700,7 +16709,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "Net-(S3-B)")
+			(net "Net-(S3-B)")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -16712,7 +16721,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -16732,16 +16741,6 @@
 		)
 	)
 	(gr_line
-		(start 115.538797 122.599616)
-		(end 115.107157 120.75)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "B.SilkS")
-		(uuid "23b387ab-4ed6-44a1-b127-511088e8d2d8")
-	)
-	(gr_line
 		(start 115.25 115.25)
 		(end 115.720119 113.357928)
 		(stroke
@@ -16752,34 +16751,14 @@
 		(uuid "5a8bb04e-1c4f-44ab-8f29-7448ff8484d9")
 	)
 	(gr_line
-		(start 173.482 85.598)
-		(end 173.482 133.35)
+		(start 115.538797 122.599616)
+		(end 115.107157 120.75)
 		(stroke
-			(width 0.05)
+			(width 0.15)
 			(type default)
 		)
-		(layer "Edge.Cuts")
-		(uuid "110f87bd-f7d0-4494-90be-8cadab12d8e7")
-	)
-	(gr_line
-		(start 172.72 134.112)
-		(end 114.3 134.112)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "237543cd-b0d7-4a3c-bbaf-a73421c285e0")
-	)
-	(gr_line
-		(start 114.3 84.836)
-		(end 172.72 84.836)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "306616e4-fc3b-413b-839a-92a0f4d1d472")
+		(layer "B.SilkS")
+		(uuid "23b387ab-4ed6-44a1-b127-511088e8d2d8")
 	)
 	(gr_arc
 		(start 113.538 85.598)
@@ -16792,28 +16771,6 @@
 		(layer "Edge.Cuts")
 		(uuid "32448c0c-c114-4798-90ba-a5a97c28454f")
 	)
-	(gr_arc
-		(start 172.72 84.836)
-		(mid 173.258815 85.059185)
-		(end 173.482 85.598)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "4dc0444a-48ed-43a5-b2c3-6a053441ed8e")
-	)
-	(gr_arc
-		(start 173.482 133.35)
-		(mid 173.258815 133.888815)
-		(end 172.72 134.112)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "827ad4ff-aac2-40a0-9d3a-0ecbe8e70c82")
-	)
 	(gr_line
 		(start 113.538 133.35)
 		(end 113.538 85.598)
@@ -16823,6 +16780,16 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "b382492b-229b-45a4-9b8d-70d3c73ad7b5")
+	)
+	(gr_line
+		(start 114.3 84.836)
+		(end 172.72 84.836)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "306616e4-fc3b-413b-839a-92a0f4d1d472")
 	)
 	(gr_arc
 		(start 114.3 134.112)
@@ -16834,6 +16801,48 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "cb88f20e-7339-4026-8138-25a0bc7c0bf3")
+	)
+	(gr_arc
+		(start 172.72 84.836)
+		(mid 173.258815 85.059185)
+		(end 173.482 85.598)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4dc0444a-48ed-43a5-b2c3-6a053441ed8e")
+	)
+	(gr_line
+		(start 172.72 134.112)
+		(end 114.3 134.112)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "237543cd-b0d7-4a3c-bbaf-a73421c285e0")
+	)
+	(gr_line
+		(start 173.482 85.598)
+		(end 173.482 133.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "110f87bd-f7d0-4494-90be-8cadab12d8e7")
+	)
+	(gr_arc
+		(start 173.482 133.35)
+		(mid 173.258815 133.888815)
+		(end 172.72 134.112)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "827ad4ff-aac2-40a0-9d3a-0ecbe8e70c82")
 	)
 	(gr_text "kit V2.0 r2"
 		(at 161.3 98.5 0)
@@ -17040,18 +17049,6 @@
 			)
 		)
 	)
-	(gr_text "+"
-		(at 120.4 124.15 0)
-		(layer "F.SilkS")
-		(uuid "2603bbed-6204-43e2-b03c-af48a26c3374")
-		(effects
-			(font
-				(size 3.5 3.5)
-				(thickness 0.6)
-				(bold yes)
-			)
-		)
-	)
 	(gr_text "TSOP38238"
 		(at 113.95 95.6 0)
 		(layer "F.SilkS")
@@ -17065,10 +17062,10 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "On"
-		(at 123.19 106.68 90)
+	(gr_text "NA"
+		(at 154.94 114.3 0)
 		(layer "F.SilkS")
-		(uuid "55fce3e4-9452-4460-a9a6-30c6349f02a8")
+		(uuid "bf38bc1f-948e-4c5f-bf52-2ba26dc578a5")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17104,10 +17101,10 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "NA"
-		(at 154.94 114.3 0)
+	(gr_text "On"
+		(at 123.19 106.68 90)
 		(layer "F.SilkS")
-		(uuid "bf38bc1f-948e-4c5f-bf52-2ba26dc578a5")
+		(uuid "55fce3e4-9452-4460-a9a6-30c6349f02a8")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17129,10 +17126,34 @@
 			)
 		)
 	)
-	(gr_text "3.3"
-		(at 145.55 109.95 90)
+	(gr_text "+"
+		(at 120.4 124.15 0)
+		(layer "F.SilkS")
+		(uuid "2603bbed-6204-43e2-b03c-af48a26c3374")
+		(effects
+			(font
+				(size 3.5 3.5)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "IRLU024NPBF"
+		(at 151.55 132.2 0)
 		(layer "B.SilkS")
-		(uuid "23489da5-4634-4333-92e6-1729a49a5331")
+		(uuid "571ceffc-434f-4f6e-ac40-6a2f4726e1e7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "47K"
+		(at 130.05 125.55 0)
+		(layer "B.SilkS")
+		(uuid "9fe39553-5408-4b56-b324-4b3061b5f4e2")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -17142,10 +17163,10 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "3.3"
-		(at 133.25 109.95 90)
+	(gr_text "56"
+		(at 130.05 130.65 0)
 		(layer "B.SilkS")
-		(uuid "25e7b153-2244-4f54-b487-e9b74cb1dde3")
+		(uuid "57de9224-31bb-4b4e-a9f4-1feb55e8bb73")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -17169,6 +17190,19 @@
 		)
 	)
 	(gr_text "3.3"
+		(at 133.25 109.95 90)
+		(layer "B.SilkS")
+		(uuid "25e7b153-2244-4f54-b487-e9b74cb1dde3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(gr_text "3.3"
 		(at 139.4 109.95 90)
 		(layer "B.SilkS")
 		(uuid "362e37d2-733a-4d73-9298-e27641f31093")
@@ -17181,35 +17215,10 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "IRLU024NPBF"
-		(at 151.55 132.2 0)
+	(gr_text "3.3"
+		(at 145.55 109.95 90)
 		(layer "B.SilkS")
-		(uuid "571ceffc-434f-4f6e-ac40-6a2f4726e1e7")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-			(justify left bottom mirror)
-		)
-	)
-	(gr_text "56"
-		(at 130.05 130.65 0)
-		(layer "B.SilkS")
-		(uuid "57de9224-31bb-4b4e-a9f4-1feb55e8bb73")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "47K"
-		(at 130.05 125.55 0)
-		(layer "B.SilkS")
-		(uuid "9fe39553-5408-4b56-b324-4b3061b5f4e2")
+		(uuid "23489da5-4634-4333-92e6-1729a49a5331")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -17237,7 +17246,7 @@
 		(end 114.75 92.2)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "0093a4d1-fb06-4094-a15e-2f3d5331205a")
 	)
 	(segment
@@ -17245,7 +17254,7 @@
 		(end 168.344999 88.581001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "0ce71b1c-0ba6-417a-aec3-4eff2f53f798")
 	)
 	(segment
@@ -17253,7 +17262,7 @@
 		(end 128.691 125.055)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "13740fac-ff76-435f-a1f6-3d794d77ca7c")
 	)
 	(segment
@@ -17261,7 +17270,7 @@
 		(end 118.618 128.777996)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "186c181b-debd-4f29-a312-e92edfb0ebf3")
 	)
 	(segment
@@ -17269,7 +17278,7 @@
 		(end 168.344999 87.318999)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "21352830-9709-4d68-bfe1-54daa3508c92")
 	)
 	(segment
@@ -17277,7 +17286,7 @@
 		(end 154.813 128.905)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "26ab07ef-8e6e-4064-9577-7ba630b3ccec")
 	)
 	(segment
@@ -17285,7 +17294,7 @@
 		(end 115.316 106.172)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "26b13633-eba0-46f2-a597-be950065d5f6")
 	)
 	(segment
@@ -17293,7 +17302,7 @@
 		(end 116.463 98.675)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "2708df4b-5168-4733-930b-e62bf88c29d7")
 	)
 	(segment
@@ -17301,7 +17310,7 @@
 		(end 119.634 122.682)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "34c446f1-a27e-471b-9607-c5b444f980ce")
 	)
 	(segment
@@ -17309,7 +17318,7 @@
 		(end 143.891 122.174)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "3ce66212-8067-4b66-bff2-1c2a1cbcc80d")
 	)
 	(segment
@@ -17317,7 +17326,7 @@
 		(end 118.11 96.04)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "3f44113b-8cb3-4b5a-b756-8a813362fc88")
 	)
 	(segment
@@ -17325,7 +17334,7 @@
 		(end 157.68 116.894)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "477f9cd2-4b9e-4421-8dbb-184d57ca6bcb")
 	)
 	(segment
@@ -17333,7 +17342,7 @@
 		(end 152.4 122.174)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "4955c20f-e67c-4897-b80d-d01bdec25535")
 	)
 	(segment
@@ -17341,7 +17350,7 @@
 		(end 116.019 106.875)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "4df4471f-3b75-43ba-96de-b57ce16e85c7")
 	)
 	(segment
@@ -17349,7 +17358,7 @@
 		(end 125.175 125.055)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "4f27bf7e-82a4-4c61-9776-25a62d28d8f4")
 	)
 	(segment
@@ -17357,7 +17366,7 @@
 		(end 119.634 125.984)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "52fb9808-78e6-4669-adb9-9d0ea65aaf38")
 	)
 	(segment
@@ -17365,7 +17374,7 @@
 		(end 118.364 121.412)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "57e68609-710f-4dc6-a4a5-6f66d7c4ff78")
 	)
 	(segment
@@ -17373,7 +17382,7 @@
 		(end 170.18 115.655)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "5bf2db7e-8e0d-41cc-93ae-1fa94a3a14a8")
 	)
 	(segment
@@ -17381,7 +17390,7 @@
 		(end 119.448 111.574)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "63f8b741-1957-409d-9cde-7e69b6287a11")
 	)
 	(segment
@@ -17389,7 +17398,7 @@
 		(end 153.67 123.444)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "68d244ac-7cc2-45e9-bb6f-b2a355ecaf7c")
 	)
 	(segment
@@ -17397,7 +17406,7 @@
 		(end 125.175 125.055)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "725dfd74-535f-48a1-b415-bf024604160a")
 	)
 	(segment
@@ -17405,7 +17414,7 @@
 		(end 121.452 128.778)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "79b552de-702c-445b-afff-91517832b5e8")
 	)
 	(segment
@@ -17413,7 +17422,7 @@
 		(end 120.142 112.268)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "866b18a3-68c4-446f-aede-af8f4dc73af9")
 	)
 	(segment
@@ -17421,7 +17430,7 @@
 		(end 131.318 122.428)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "8a1d7632-f6d6-4844-ae3d-7e2a96e327dc")
 	)
 	(segment
@@ -17429,7 +17438,7 @@
 		(end 118.617996 128.778)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "8bd0cd97-76e0-4c73-9cb5-1ab0db0a282d")
 	)
 	(segment
@@ -17437,7 +17446,7 @@
 		(end 118.618 127)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "99ac862f-b44f-4e8b-9c56-e4970b46c575")
 	)
 	(segment
@@ -17445,7 +17454,7 @@
 		(end 127.79 86.36)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "9b1bf0c0-16e1-436a-886a-a8b04c17d4d7")
 	)
 	(segment
@@ -17453,7 +17462,7 @@
 		(end 157.68 115.655)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "9cd9cb04-a48b-4736-aa37-ada44cb588c3")
 	)
 	(segment
@@ -17461,7 +17470,7 @@
 		(end 114.75 95.4)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "9dfaed3a-3a7f-49a2-84d9-8fb638210012")
 	)
 	(segment
@@ -17469,7 +17478,7 @@
 		(end 118.025 98.675)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "a282eb56-2b88-4745-8350-42d621d9b700")
 	)
 	(segment
@@ -17477,7 +17486,7 @@
 		(end 120.142 115.102)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "a68f673d-25ba-44f5-93c1-423cdcafe839")
 	)
 	(segment
@@ -17485,7 +17494,7 @@
 		(end 118.11 106.875)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "af655700-9a5a-42bb-bdb1-d23753155320")
 	)
 	(segment
@@ -17493,7 +17502,7 @@
 		(end 138.303 122.428)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "b44d0f5a-79c3-422b-aaca-06eefd331734")
 	)
 	(segment
@@ -17501,7 +17510,7 @@
 		(end 115.316 99.822)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "b5d30c38-a1f5-4de2-98b3-5b076e6bae74")
 	)
 	(segment
@@ -17509,7 +17518,7 @@
 		(end 140.97 125.095)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "b65232b9-7fe2-43c7-bbf7-1e4ce422324f")
 	)
 	(segment
@@ -17517,7 +17526,7 @@
 		(end 116.72 109.848)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "b9bef737-e72e-49ee-96f4-f4b1239a358d")
 	)
 	(segment
@@ -17525,7 +17534,7 @@
 		(end 153.67 127.762)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "cb16781c-8e46-42ed-8e25-cd7ee9160129")
 	)
 	(segment
@@ -17533,7 +17542,7 @@
 		(end 167.386 86.36)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "cd335899-e7cd-4617-ae3a-fe238cb616de")
 	)
 	(segment
@@ -17541,7 +17550,7 @@
 		(end 116.15 90.8)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "d09690f6-e894-4d04-b4ca-21379069d63e")
 	)
 	(segment
@@ -17549,7 +17558,7 @@
 		(end 118.05 90.8)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "d383e6d3-9529-4cc2-9ddb-2513bfb2c5de")
 	)
 	(segment
@@ -17557,7 +17566,7 @@
 		(end 118.11 98.675)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "d84086b1-4ee1-4de8-ba69-3e5bd818ee82")
 	)
 	(segment
@@ -17565,7 +17574,7 @@
 		(end 118.364 113.218)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "d8ce42e3-39b4-424c-9c68-0b20bcbb3e63")
 	)
 	(segment
@@ -17573,7 +17582,7 @@
 		(end 118.11 108.458)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "e3c3b176-cc0b-43df-8e6c-ba15f22909ad")
 	)
 	(segment
@@ -17581,7 +17590,7 @@
 		(end 170.18 128.905)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 1)
+		(net "GND")
 		(uuid "f009497c-e763-4fca-a4fd-f306b2b594c9")
 	)
 	(segment
@@ -17589,7 +17598,7 @@
 		(end 120.142 120.102)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "01f04a92-317d-4644-9257-19c0f831e150")
 	)
 	(segment
@@ -17597,7 +17606,7 @@
 		(end 122.428 117.856)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "2c82bd77-fda5-424b-83e6-d82fb1b316d9")
 	)
 	(segment
@@ -17605,7 +17614,7 @@
 		(end 116.72 124.373998)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "57088729-946e-4227-8876-7889a3078ea4")
 	)
 	(segment
@@ -17613,7 +17622,7 @@
 		(end 119.466002 124.373998)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "584578d4-4fbb-49ba-923c-d0ccbbb10ecc")
 	)
 	(segment
@@ -17621,7 +17630,7 @@
 		(end 122.388 117.856)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "8362c996-e8d0-4b52-8285-e0860d9c9a80")
 	)
 	(segment
@@ -17629,7 +17638,7 @@
 		(end 116.078004 128.778)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "8d4deabf-9d25-408f-95af-9c2931a16001")
 	)
 	(segment
@@ -17637,7 +17646,7 @@
 		(end 116.72 128.136004)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "a8a3eadb-efd8-4f80-b066-7ac7e433f740")
 	)
 	(segment
@@ -17645,7 +17654,7 @@
 		(end 119.538999 102.774999)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "ceae7c38-04d7-4a93-8b2c-565ad57e2b44")
 	)
 	(segment
@@ -17653,7 +17662,7 @@
 		(end 120.142 123.698)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "d428d4fc-502b-4b54-9fe9-1db2ea69c5e5")
 	)
 	(segment
@@ -17661,7 +17670,7 @@
 		(end 122.428 105.664)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 2)
+		(net "Net-(S3-B)")
 		(uuid "dd014d51-b184-4713-8dc8-7fa35ea1f612")
 	)
 	(segment
@@ -17669,7 +17678,7 @@
 		(end 118.05 93.34)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "9292d46b-6a6e-4bde-9560-34f7a621e447")
 	)
 	(segment
@@ -17677,7 +17686,7 @@
 		(end 119.490001 94.780001)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "9b54c294-4f4a-4f32-9d2e-9c84db939a0a")
 	)
 	(segment
@@ -17685,7 +17694,7 @@
 		(end 122.025 93.113)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "08ba858c-d0cf-4351-8e9a-904f21505fb8")
 	)
 	(segment
@@ -17693,7 +17702,7 @@
 		(end 129.125 93.125)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "2104a686-e52e-428c-8b93-61b34ab92884")
 	)
 	(segment
@@ -17701,7 +17710,7 @@
 		(end 143.294001 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "234a10c1-cb09-460c-bab4-988ab5b005c8")
 	)
 	(segment
@@ -17709,7 +17718,7 @@
 		(end 120.269 104.775)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "2de8cac1-3cd0-44ec-a11e-c991834d51c3")
 	)
 	(segment
@@ -17717,7 +17726,7 @@
 		(end 122.936 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "55a60cfc-1c74-479a-8462-c88c065ebd1b")
 	)
 	(segment
@@ -17725,7 +17734,7 @@
 		(end 169.418 91.694)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "5a3c6fa8-5848-4ea9-8eb0-1c64af35457f")
 	)
 	(segment
@@ -17733,7 +17742,7 @@
 		(end 118.11 104.775)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "5aadd5e2-39fd-45be-a03d-1ef5b2fdfd1f")
 	)
 	(segment
@@ -17741,7 +17750,7 @@
 		(end 136.182001 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "5fba93b1-5d06-4246-859b-6a0d56465495")
 	)
 	(segment
@@ -17749,7 +17758,7 @@
 		(end 136.225 92.883)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "62aa417b-2cb5-4d60-bb9b-fc9715ff462d")
 	)
 	(segment
@@ -17757,7 +17766,7 @@
 		(end 126.492 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "6d11e06b-2208-4c21-b7f8-8063bfd9936f")
 	)
 	(segment
@@ -17765,7 +17774,7 @@
 		(end 170.885 90.227)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "75e61f76-cda0-4f15-af5c-7aab7e63d2b0")
 	)
 	(segment
@@ -17773,7 +17782,7 @@
 		(end 136.225 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "7d158b35-2af5-49be-b346-c20a3a9f2053")
 	)
 	(segment
@@ -17781,7 +17790,7 @@
 		(end 133.604 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "7e3690d2-6e2f-42b5-a3d2-43b08a38de97")
 	)
 	(segment
@@ -17789,7 +17798,7 @@
 		(end 144.272 91.694)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "8507d2da-1d7f-4956-a9f6-5b9c50553940")
 	)
 	(segment
@@ -17797,7 +17806,7 @@
 		(end 143.325 92.641)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "8fe9ad43-ea4b-4647-a2a4-ac61f4617d71")
 	)
 	(segment
@@ -17805,7 +17814,7 @@
 		(end 140.716 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "92db1169-5fbb-467b-a810-e8e7e1e24872")
 	)
 	(segment
@@ -17813,7 +17822,7 @@
 		(end 129.070001 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "97a243e2-1a93-4605-a1be-62cf42bd0281")
 	)
 	(segment
@@ -17821,7 +17830,7 @@
 		(end 136.906 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "9c54964c-5f0d-4cfe-81be-2dac9ffc39bd")
 	)
 	(segment
@@ -17829,7 +17838,7 @@
 		(end 122.025 103.019)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "9dbf867f-8a7b-4a48-af49-0305f9203e57")
 	)
 	(segment
@@ -17837,7 +17846,7 @@
 		(end 129.125 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "9dcf22c9-acde-4ab4-babb-cc8be3e55546")
 	)
 	(segment
@@ -17845,7 +17854,7 @@
 		(end 130.048 92.202)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "b8967009-e795-41a0-b76b-1109743e1eb9")
 	)
 	(segment
@@ -17853,7 +17862,7 @@
 		(end 129.125 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "e4e3d0bd-9af8-44bd-a1aa-6cffa7eef5a9")
 	)
 	(segment
@@ -17861,7 +17870,7 @@
 		(end 170.885 88.581)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 4)
+		(net "+4.5V")
 		(uuid "ee14c9d8-a1b5-4930-9158-67e882eea096")
 	)
 	(segment
@@ -17869,7 +17878,7 @@
 		(end 158.184999 103.951)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 8)
+		(net "Net-(MOD1-GPIO10)")
 		(uuid "4aadab1a-def5-4dfb-9fe4-eafedb2cf784")
 	)
 	(segment
@@ -17877,7 +17886,7 @@
 		(end 159.258 109.077)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 8)
+		(net "Net-(MOD1-GPIO10)")
 		(uuid "8072e9cd-c570-4858-ad7d-d100cb56710d")
 	)
 	(segment
@@ -17885,7 +17894,7 @@
 		(end 159.258 105.024001)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 8)
+		(net "Net-(MOD1-GPIO10)")
 		(uuid "b8a062f3-30f5-4eac-8a63-ea4795ecc18e")
 	)
 	(segment
@@ -17893,7 +17902,7 @@
 		(end 170.18 110.655)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 8)
+		(net "Net-(MOD1-GPIO10)")
 		(uuid "b0fb44be-8d6b-41b5-83c4-6bedbe10bf83")
 	)
 	(segment
@@ -17901,7 +17910,7 @@
 		(end 160.725002 118.420998)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 12)
+		(net "Net-(MOD1-GPIO9)")
 		(uuid "3e4ebd63-7f58-4376-88eb-2f5e573531a7")
 	)
 	(segment
@@ -17909,7 +17918,7 @@
 		(end 160.725002 103.951)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 12)
+		(net "Net-(MOD1-GPIO9)")
 		(uuid "5e9dd2c0-166f-45ac-9111-9effbb9b8935")
 	)
 	(segment
@@ -17917,7 +17926,7 @@
 		(end 157.68 121.466)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 12)
+		(net "Net-(MOD1-GPIO9)")
 		(uuid "af5cdf6c-c87a-4076-b364-ef3d8ee92f15")
 	)
 	(segment
@@ -17925,7 +17934,7 @@
 		(end 170.18 123.905)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 12)
+		(net "Net-(MOD1-GPIO9)")
 		(uuid "5eeeded0-d322-427f-96ab-e51c2dc242b7")
 	)
 	(segment
@@ -17933,7 +17942,7 @@
 		(end 160.724999 90.225001)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 13)
+		(net "Net-(MOD1-GPIO3)")
 		(uuid "01924477-8d9f-431b-9f99-2af7820b7610")
 	)
 	(segment
@@ -17941,7 +17950,7 @@
 		(end 160.724999 88.580999)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 13)
+		(net "Net-(MOD1-GPIO3)")
 		(uuid "1fe6853c-f04e-4408-84e8-8ae587ca546d")
 	)
 	(segment
@@ -17949,7 +17958,7 @@
 		(end 139.01 88.26)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 13)
+		(net "Net-(MOD1-GPIO3)")
 		(uuid "462fc753-e070-46d6-b0de-f9b17ae6055e")
 	)
 	(segment
@@ -17957,7 +17966,7 @@
 		(end 158.85 92.1)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 13)
+		(net "Net-(MOD1-GPIO3)")
 		(uuid "980520fc-249e-45c8-9fa8-dfece4318a7a")
 	)
 	(segment
@@ -17965,7 +17974,7 @@
 		(end 142.85 92.1)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 13)
+		(net "Net-(MOD1-GPIO3)")
 		(uuid "c99ea7c1-e3bc-4f91-8c8a-e9b8bc0b42b6")
 	)
 	(segment
@@ -17973,7 +17982,7 @@
 		(end 126.365 102.254997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 18)
+		(net "Net-(LED1-PadK)")
 		(uuid "1188fadd-03c0-4878-942d-bc922ebdd5ad")
 	)
 	(segment
@@ -17981,7 +17990,7 @@
 		(end 126.365 96.580001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 18)
+		(net "Net-(LED1-PadK)")
 		(uuid "5c4366aa-123a-4195-81f7-209d2468a7fd")
 	)
 	(segment
@@ -17989,7 +17998,7 @@
 		(end 132.715 95.631)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 19)
+		(net "Net-(LED2-PadK)")
 		(uuid "6062e843-d98a-4720-bca2-bf67e87b03fe")
 	)
 	(segment
@@ -17997,7 +18006,7 @@
 		(end 131.864001 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 19)
+		(net "Net-(LED2-PadK)")
 		(uuid "f2cfefd7-7a32-410f-a924-b55e0523e312")
 	)
 	(segment
@@ -18005,7 +18014,7 @@
 		(end 131.665 94.780001)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 19)
+		(net "Net-(LED2-PadK)")
 		(uuid "fcf79117-c6e1-481e-a32a-16112f5ef9a5")
 	)
 	(segment
@@ -18013,7 +18022,7 @@
 		(end 138.765 102.082)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 20)
+		(net "Net-(LED3-PadK)")
 		(uuid "7ece0e68-38af-4ec0-8d6d-157a70845dff")
 	)
 	(segment
@@ -18021,7 +18030,7 @@
 		(end 138.938 102.255)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 20)
+		(net "Net-(LED3-PadK)")
 		(uuid "9b52ea5f-281f-47c7-b419-cf9f4c94f8e9")
 	)
 	(segment
@@ -18029,7 +18038,7 @@
 		(end 145.865 101.423997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 21)
+		(net "Net-(LED4-PadK)")
 		(uuid "5daea276-15cb-4531-bb1a-e16cdc96e8c1")
 	)
 	(segment
@@ -18037,7 +18046,7 @@
 		(end 145.034 102.254997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 21)
+		(net "Net-(LED4-PadK)")
 		(uuid "9a8c8c3e-8412-4c62-ad6f-ee0cb788a367")
 	)
 	(segment
@@ -18045,7 +18054,7 @@
 		(end 138.938 117.455)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "0ef5d830-67c4-4b01-a81a-d80a6998a54c")
 	)
 	(segment
@@ -18053,7 +18062,7 @@
 		(end 138.561001 127.385001)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "3d051a4d-ef1e-49a2-8962-2d5b5b07a376")
 	)
 	(segment
@@ -18061,7 +18070,7 @@
 		(end 137.668 118.725)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "6fa70866-3baf-45ac-9152-9a5930737355")
 	)
 	(segment
@@ -18069,7 +18078,7 @@
 		(end 137.668 126.492)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "93db3cec-2190-45eb-a75b-aeb4c5169346")
 	)
 	(segment
@@ -18077,7 +18086,7 @@
 		(end 138.938 117.455)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "0bf91282-78c8-487f-b5e2-1198e5a80af4")
 	)
 	(segment
@@ -18085,7 +18094,7 @@
 		(end 132.948997 117.454997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "255dbb30-220c-46a7-8bf0-778b0fd92a65")
 	)
 	(segment
@@ -18093,7 +18102,7 @@
 		(end 145.033997 117.455)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "38149c90-7311-437f-b66f-36d863a4b29b")
 	)
 	(segment
@@ -18101,7 +18110,7 @@
 		(end 132.715 117.454997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "5fb932ee-4a48-4409-99bf-af91c0fc80e5")
 	)
 	(segment
@@ -18109,7 +18118,7 @@
 		(end 132.949 117.455)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "9ddd2b95-87b9-404c-ac20-b21c61693c27")
 	)
 	(segment
@@ -18117,7 +18126,7 @@
 		(end 145.034 117.454997)
 		(width 0.508)
 		(layer "B.Cu")
-		(net 22)
+		(net "Net-(Q1-PadD)")
 		(uuid "ce0e4b81-35e5-4d84-87c7-cd0d6d42a524")
 	)
 	(segment
@@ -18125,7 +18134,7 @@
 		(end 138.557 130.175)
 		(width 0.3048)
 		(layer "B.Cu")
-		(net 23)
+		(net "Net-(Q1-PadG)")
 		(uuid "5e090340-5bb1-4b1f-8bed-0a457251a4bb")
 	)
 	(segment
@@ -18133,7 +18142,7 @@
 		(end 135.175 130.175)
 		(width 0.3048)
 		(layer "B.Cu")
-		(net 23)
+		(net "Net-(Q1-PadG)")
 		(uuid "658b9418-c094-4c8b-97c8-311d5b6f350c")
 	)
 	(segment
@@ -18141,7 +18150,7 @@
 		(end 135.175 130.175)
 		(width 0.3048)
 		(layer "B.Cu")
-		(net 23)
+		(net "Net-(Q1-PadG)")
 		(uuid "9e579bc6-9e4c-4095-a071-0b450d7fb2d7")
 	)
 	(segment
@@ -18149,7 +18158,7 @@
 		(end 139.056999 129.675001)
 		(width 0.3048)
 		(layer "B.Cu")
-		(net 23)
+		(net "Net-(Q1-PadG)")
 		(uuid "bf7060e0-2690-49dd-a02d-173ac843cba7")
 	)
 	(segment
@@ -18157,7 +18166,7 @@
 		(end 135.89 111.76)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "23f44fed-5261-4246-938a-1baf6689c781")
 	)
 	(segment
@@ -18165,7 +18174,7 @@
 		(end 128.143 130.175)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "288f689f-5a62-41d1-a1b4-cd1e87e4dd8d")
 	)
 	(segment
@@ -18173,7 +18182,7 @@
 		(end 163.265001 91.234999)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "3dae8a4d-8a1b-4154-a5f0-134478e13ec2")
 	)
 	(segment
@@ -18181,7 +18190,7 @@
 		(end 141.986 110.49)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "61918650-55dd-4e68-8a89-e1ca1b99f0b2")
 	)
 	(segment
@@ -18189,7 +18198,7 @@
 		(end 135.89 119.126)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "6f4a84e2-3c62-46c4-951a-28e49506eb4f")
 	)
 	(segment
@@ -18197,7 +18206,7 @@
 		(end 163.265001 88.580999)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "88b9095f-b14f-4466-98d7-7b68f0186ac9")
 	)
 	(segment
@@ -18205,7 +18214,7 @@
 		(end 132.334 122.682)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "9fc638e9-60a3-48b2-be13-2200e727dc27")
 	)
 	(segment
@@ -18213,7 +18222,7 @@
 		(end 137.16 110.49)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "ab6760d3-b92f-425c-98fe-c68f9a7a8522")
 	)
 	(segment
@@ -18221,7 +18230,7 @@
 		(end 160.35 94.15)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "c7616efd-df94-4e38-ad07-f43598da8001")
 	)
 	(segment
@@ -18229,7 +18238,7 @@
 		(end 132.334 125.984)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "c767ff28-3527-42bf-9235-7a5d261e883a")
 	)
 	(segment
@@ -18237,12 +18246,10 @@
 		(end 158.326 94.15)
 		(width 0.508)
 		(layer "F.Cu")
-		(net 25)
+		(net "Net-(MOD1-GPIO4)")
 		(uuid "edad86be-e9f2-4af8-aa55-a3d892fb5685")
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
 		(uuid "583e0eaf-36b3-488f-bbae-5c24fa636d46")
 		(hatch edge 0.5)
@@ -18251,12 +18258,10 @@
 			(clearance 0.5)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(fill yes
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
 			(island_removal_mode 1)
-			(island_area_min 10)
 		)
 		(polygon
 			(pts
@@ -18265,7 +18270,7 @@
 		)
 		(filled_polygon
 			(layer "F.Cu")
-			(island)
+			(island yes)
 			(pts
 				(xy 169.107039 96.793685) (xy 169.152794 96.846489) (xy 169.164 96.898) (xy 169.164 98.428) (xy 169.144315 98.495039)
 				(xy 169.091511 98.540794) (xy 169.04 98.552) (xy 161.414 98.552) (xy 161.346961 98.532315) (xy 161.301206 98.479511)
@@ -18275,8 +18280,6 @@
 		)
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
 		(uuid "b6b0b65c-7085-4390-845c-165258da1cef")
 		(hatch edge 0.5)
@@ -18284,12 +18287,10 @@
 			(clearance 0.5)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(fill yes
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
 			(island_removal_mode 1)
-			(island_area_min 10)
 		)
 		(polygon
 			(pts
@@ -18299,7 +18300,7 @@
 		)
 		(filled_polygon
 			(layer "F.Cu")
-			(island)
+			(island yes)
 			(pts
 				(xy 152.851039 123.209685) (xy 152.896794 123.262489) (xy 152.908 123.314) (xy 152.908 133.734)
 				(xy 152.888315 133.801039) (xy 152.835511 133.846794) (xy 152.784 133.858) (xy 114.17 133.858) (xy 114.102961 133.838315)
