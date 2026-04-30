@@ -55,7 +55,10 @@
 
   21-Jan-2026   Mitch Altman
   Updated for ESP32-C3 Super Mini board
-
+  
+  30-Apr-2026   Mitch Altman
+  Changed the IRLED pin from 2 to 4, since GPIO2 on the ESP32-C3 goes High for ~2sec 
+     while programming through the bootloader (which will burn out the IR LEDs).
 
   Creative Commons CC BY-SA 4.0
   This license enables reusers to distribute, remix, adapt, and build

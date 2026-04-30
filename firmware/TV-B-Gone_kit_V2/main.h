@@ -39,6 +39,11 @@ TV-B-Gone main.h for Arduino version 0.002
   21-Jan-2026   Mitch Altman
   Updated for ESP32-C3 Super Mini board
 
+  30-Apr-2026   Mitch Altman
+  Changed the IRLED pin from 2 to 4, since GPIO2 on the ESP32-C3 goes High for ~2sec 
+     while programming through the bootloader (which will burn out the IR LEDs).
+  Added IR_RCVR pin for eventually adding IR code learning (which is not yet implemented at all).
+
 
 
   Creative Commons CC BY-SA 4.0
@@ -88,10 +93,12 @@ we make use of the following macros
 #define TRUE 1
 
 // What pins do what
-#define VISLED 8             // (On Mitch's HOPE badge dev board (Rel 0.8.14), this is Arduino pin 13, which is D28, Green LED)
-#define IRLED 2              // (On Mitch's HOPE badge dev board (Rel 0.8.14), this is Arduino pin 2, which is D23, IR_TX)
-#define BUTTON_NA 10         // (On Mitch's HOPE badge dev board (Rel 0.8.14), this is Arduino pin 10, which is connected to SW1, Green push-button, TACT_A)
-#define BUTTON_EU 9          // (On Mitch's HOPE badge dev board (Rel 0.8.14), this is Arduino pin 9, which is connected to SW2, Red push-button, TACT_B)
+#define VISLED 8
+#define IRLED 4
+#define BUTTON_NA 10
+#define BUTTON_EU 9
+#define IR_RCVR 3    // This is not implemented yet, 
+                     // but will eventually be for learning new IR codes with an IR Receiver on this pin
 
 // Lets us calculate the size of the NA/EU databases
 #define NUM_ELEM(x) (sizeof (x) / sizeof (*(x)));
