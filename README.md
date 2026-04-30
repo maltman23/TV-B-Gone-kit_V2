@@ -2,7 +2,7 @@
 
 The original (V1.2) <a href="http://www.adafruit.com/products/73">TV-B-Gone kit</a> is still available at Adafruit.  
   
-I am currently working on a new (V2) TV-B-Gone kit. The first iteration uses a small-form ESP32 board, making it easier to solder, and easier to re-program for total beginners. This new version also uses a MOSFET, which allows for fewer parts, and allows for a longer range for turning off TVs in public places!  
+I am currently working on a new (V2) TV-B-Gone kit. I am now on the second iteration, using a small-form ESP32 board, making it easier to solder, and easier to re-program for total beginners. This new version also uses a MOSFET, which allows for fewer parts, and allows for a longer range for turning off TVs in public places!  
   
 Photo of a completed first draft of the kit, for giving workshops:  
 ![PXL_20260212_211537771](https://github.com/user-attachments/assets/2c68db52-bae4-463f-90b8-3bed8a5e421f)
@@ -11,7 +11,7 @@ Photo of a completed first draft of the kit, for giving workshops:
   
 Imagine a dystopian future, filled with monitors, marketing at us everywhere we go. Sadly, we are living that future now. This kit is super useful, not only for yourself, but for everyone! And while maybe that's dramatic, the TV-B-Gone is perfect for playing pranks on your friends during the Super Bowl or getting some peace and quiet during dinner.  
   
-The TV-B-Gone is a kit that, when soldered together, allows you to turn off almost any television within 50 meters or more.  It works on over 260 total power codes - 130 American/Asian and another 230 European/African codes.  You can select which zone with a button push.  
+The TV-B-Gone is a kit that, when soldered together, allows you to turn off almost any television within 50 meters or more.  It works on 287 total power codes - 142 American/Asian and another 145 European/African codes.  You can select which zone with a button push.  
 <img width="1800" height="1350" alt="TV-B-Gone_turning_TVs_off_graphic" src="https://github.com/user-attachments/assets/e1758c44-abcb-499a-b5c6-1da04a4d4314" />  
   
 This is an unassembled kit which means that soldering is required - but it's very easy and a great introduction to soldering in general.  The kit is powered by 3x AA batteries - that aren't included - and the output comes from 2x narrow beam IR LEDs and 2x wide-beam IR LEDs.  
@@ -24,7 +24,7 @@ Acer, Admiral, Aiko, Alleron, Anam National, AOC, Apex, Baur, Bell&Howell, Brill
   
 ## Future Ideas/Plans  
   
-* Add an IR receiver for learning new OFF-Codes  
+* Add an IR receiver for learning new OFF-Codes (the r2 of the PCB has pads for the IR receiver, but no firmware, yet) 
 * Make use of the ESP32's web-server to create a web-browser interface for updating the TV-B-Gone firmware  
 * Use the web-browser interface for TV-B-Gone users to share new OFF-Codes  
 * Maybe make use of the ESP32's BLE abilities and create an app for smartphones to use (though, at this point I'm not sure what for)  
