@@ -88,13 +88,13 @@
 		(capping no)
 		(filling no)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_57557573)
+			(layerselection 0x00000000_00000000_55555555_575555ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
-			(usegerberattributes yes)
-			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(usegerberextensions yes)
+			(usegerberattributes no)
+			(usegerberadvancedattributes no)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12)
 			(dashed_line_gap_ratio 3)
 			(svgprecision 4)
@@ -121,7 +121,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Gerbers/")
 		)
 	)
 	(footprint "TVBG_Library:Turning_Off_TVs_pads_masked"
@@ -17175,7 +17175,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "3.3"
+	(gr_text "1"
 		(at 126.85 109.95 90)
 		(layer "B.SilkS")
 		(uuid "28772381-4993-4764-a7f3-b58bf1c21ef4")
@@ -17188,7 +17188,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "3.3"
+	(gr_text "1"
 		(at 133.25 109.95 90)
 		(layer "B.SilkS")
 		(uuid "25e7b153-2244-4f54-b487-e9b74cb1dde3")
@@ -17201,7 +17201,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "3.3"
+	(gr_text "1"
 		(at 139.4 109.95 90)
 		(layer "B.SilkS")
 		(uuid "362e37d2-733a-4d73-9298-e27641f31093")
@@ -17214,7 +17214,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "3.3"
+	(gr_text "1"
 		(at 145.55 109.95 90)
 		(layer "B.SilkS")
 		(uuid "23489da5-4634-4333-92e6-1729a49a5331")

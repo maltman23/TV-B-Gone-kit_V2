@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TV-B-Gone kit V2 -- preliminary PCB r2")
-		(date "2026-04-30")
+		(date "2026-05-14")
 		(rev "r2")
 		(company "Cornfield Electronics")
 		(comment 1 "Mitch Altman")
@@ -3038,7 +3038,7 @@
 	)
 	(text "Thermal pad"
 		(exclude_from_sim no)
-		(at 182.372 108.204 0)
+		(at 196.85 109.474 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3065,6 +3065,17 @@
 			)
 		)
 		(uuid "51b4527d-2403-4357-98b4-b96d16d70c2e")
+	)
+	(text "Other options for Q1:\n   Doingter DOU90N02 (from LCSC)\n   NCE NCE3080IA  (from LCSC)"
+		(exclude_from_sim no)
+		(at 184.912 125.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a8290aa-7ec6-4f70-a6e2-5b1ad19c0ae4")
 	)
 	(junction
 		(at 170.18 118.11)
@@ -4311,8 +4322,8 @@
 				)
 			)
 		)
-		(property "Value" "120"
-			(at 167.132 87.63 90)
+		(property "Value" "1"
+			(at 165.862 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4332,7 +4343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 163.83 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4343,7 +4354,7 @@
 				)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 168.91 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4354,7 +4365,7 @@
 				)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 163.83 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5385,8 +5396,8 @@
 				)
 			)
 		)
-		(property "Value" "120"
-			(at 179.832 87.63 90)
+		(property "Value" "1"
+			(at 178.816 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5406,7 +5417,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 176.53 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5417,7 +5428,7 @@
 				)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 181.61 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5428,7 +5439,7 @@
 				)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 176.53 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6141,8 +6152,8 @@
 				)
 			)
 		)
-		(property "Value" "120"
-			(at 192.532 87.63 90)
+		(property "Value" "1"
+			(at 191.516 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6162,7 +6173,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 189.23 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6173,7 +6184,7 @@
 				)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 194.31 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6184,7 +6195,7 @@
 				)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 189.23 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6231,8 +6242,8 @@
 				)
 			)
 		)
-		(property "Value" "120"
-			(at 205.232 87.63 90)
+		(property "Value" "1"
+			(at 204.216 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6252,7 +6263,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 201.93 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6263,7 +6274,7 @@
 				)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 207.01 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6274,7 +6285,7 @@
 				)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 201.93 87.63 0)
 			(hide yes)
 			(show_name no)
