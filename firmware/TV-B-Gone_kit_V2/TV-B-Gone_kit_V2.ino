@@ -33,12 +33,12 @@
 
   The hardware to connect to the ESP32-C3:
   - 3xAA battery pack connected between the "5V" pin and the "GND" pin (Vcc is thus 4.5V)
-  - IR LED connected to digital output pin 2 through an IRLU024NPBF MOSFET amplifier:
+  - IR LED connected to digital output pin 4 through an IRLU024NPBF MOSFET amplifier:
        -- Source to GND
-       -- Gate through a 1K resistor to digital output pin GPIO2
+       -- Gate through a 56 Ohm resistor to digital output pin GPIO4
        --    47K Pull-down resistor between Gate and GND
-       -- Drain to 4.7 Ohm (1/2W) resistor to IR333 LED to +4.5V (LED Anode to +4.5V)
-       --    (It is possible to use severl IR333/4.7 Ohm resistor pairs in parallel)
+       -- Drain to 1 Ohm (1/2W) resistor to IR333 LED to +4.5V (LED Anode to +4.5V)
+       --    (It is possible to use severl IR333/1 Ohm resistor pairs in parallel)
   - NA pushbutton attached between digital input pin GPIO10 and GND (with internal pullup resistor enabled)
   - EU pushbutton attached between digital input pin GPIO9 and GND (with internal pullup resistor enabled)
   - (For the visible LED indicator, we use the built-in LED on the ESP32-C3 Super Mini, which is internally connected to GPIO8)
@@ -59,6 +59,10 @@
   30-Apr-2026   Mitch Altman
   Changed the IRLED pin from 2 to 4, since GPIO2 on the ESP32-C3 goes High for ~2sec 
      while programming through the bootloader (which will burn out the IR LEDs).
+
+  19-May-2026   Mitch Altman
+  Updated the comments, above, to reflect the most recent hardware.
+
 
   Creative Commons CC BY-SA 4.0
   This license enables reusers to distribute, remix, adapt, and build
