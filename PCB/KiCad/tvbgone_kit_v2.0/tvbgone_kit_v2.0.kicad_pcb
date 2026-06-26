@@ -8,9 +8,9 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "TV-B-Gone kit V2 -- preliminary PCB r2b")
-		(date "2026-05-11")
-		(rev "r2b")
+		(title "TV-B-Gone kit V2 -- preliminary PCB r3")
+		(date "2026-06-24")
+		(rev "r3")
 		(company "Cornfield Electronics")
 		(comment 1 "Mitch Altman")
 		(comment 2 "License:  CC BY-SA 4.0")
@@ -3177,7 +3177,13 @@
 		(path "/f076f5c3-4083-4275-8404-fd8c8ae34aee")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "4" "3")
+			)
+		)
+		(attr board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -6 -6)
@@ -3499,7 +3505,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -3512,7 +3518,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -3525,7 +3531,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO9)")
-			(pinfunction "K")
+			(pinfunction "K_3")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -3538,7 +3544,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO9)")
-			(pinfunction "A")
+			(pinfunction "A_4")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -5688,6 +5694,12 @@
 		(path "/7ca639a9-abdf-4d01-b306-b2a076ac68ee")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3" "4" "5")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5848,7 +5860,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(uuid "31b0a882-1fa1-4c19-98f1-091cf14d115d")
 		)
@@ -5859,7 +5871,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(S3-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "passive")
 			(uuid "af0de012-c565-4f02-a098-6cb13974b334")
 		)
@@ -5870,7 +5882,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(S3-C-Pad3)")
-			(pinfunction "C")
+			(pinfunction "C_3")
 			(pintype "passive+no_connect")
 			(uuid "3d6307c4-5f23-4dbc-b7fa-f145e7e83be9")
 		)
@@ -5881,7 +5893,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Case")
+			(pinfunction "Case_4")
 			(pintype "passive")
 			(uuid "52286b11-7390-4f2e-94ea-b5ba7b107b68")
 		)
@@ -5892,7 +5904,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Case")
+			(pinfunction "Case_5")
 			(pintype "passive")
 			(uuid "66f3db8f-e6a1-41de-ad85-9ed2181db56f")
 		)
@@ -5981,6 +5993,12 @@
 		(path "/f5e6b6d8-d714-4f23-8885-5d42ce73f72a")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "K" "A")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
@@ -6223,7 +6241,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -6236,7 +6254,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(LED4-PadK)")
-			(pinfunction "K")
+			(pinfunction "K_K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -8951,6 +8969,12 @@
 		(path "/498ef38d-f5a2-4699-9bfb-9c26d7377fdc")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "K" "A")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
@@ -9193,7 +9217,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -9206,7 +9230,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(LED3-PadK)")
-			(pinfunction "K")
+			(pinfunction "K_K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -9297,6 +9321,12 @@
 		(path "/2a251c77-5654-445a-80f9-3fb2132af0ed")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "K" "A")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
@@ -9539,7 +9569,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -9552,7 +9582,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(LED1-PadK)")
-			(pinfunction "K")
+			(pinfunction "K_K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -9643,6 +9673,12 @@
 		(path "/40f1c0ba-abfe-42c4-a134-4b3360177c46")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "K" "A")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.5)
@@ -9885,7 +9921,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -9898,7 +9934,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(LED2-PadK)")
-			(pinfunction "K")
+			(pinfunction "K_K")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -10343,7 +10379,7 @@
 		(descr "IR Receiver Vishay TSOP-xxxx, MINICAST package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf")
 		(tags "IR Receiver Vishay TSOP-xxxx MINICAST")
 		(property "Reference" "U1"
-			(at -1.86 -0.05 180)
+			(at -1.86 -0.05 0)
 			(layer "F.SilkS")
 			(uuid "526f4f97-c245-4615-b1b0-1ad603088af9")
 			(effects
@@ -10407,6 +10443,12 @@
 		(path "/dd488d2e-7880-4767-9f5c-6059c3c3c544")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10580,7 +10622,7 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.139)
 			(net "Net-(MOD1-GPIO3)")
-			(pinfunction "OUT")
+			(pinfunction "OUT_1")
 			(pintype "output")
 			(uuid "d1d36ee4-8bcf-47ff-a825-64286edc582f")
 		)
@@ -10591,7 +10633,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "power_in")
 			(uuid "31dc6d30-ab97-4f27-a0cd-40c5541e1419")
 		)
@@ -10602,20 +10644,20 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "Vs")
+			(pinfunction "Vs_3")
 			(pintype "power_in")
 			(uuid "00e13d89-2ccf-476c-8f1e-902d346dd16a")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/OptoDevice.3dshapes/Vishay_MINICAST-3Pin.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -2)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12445,7 +12487,13 @@
 		(path "/bd2a3e00-d650-4085-ab77-310b49e17053")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "4" "3")
+			)
+		)
+		(attr board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -6 -6)
@@ -12767,7 +12815,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -12780,7 +12828,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -12793,7 +12841,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO10)")
-			(pinfunction "K")
+			(pinfunction "K_3")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -12806,7 +12854,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO10)")
-			(pinfunction "A")
+			(pinfunction "A_4")
 			(pintype "passive")
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
@@ -12900,6 +12948,12 @@
 		(path "/ce4ddd47-30c9-4988-a650-adb974df63ce")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.3)
@@ -13099,7 +13153,7 @@
 				(justify bottom mirror)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1"
 			(at -6.000001 -3.3 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13112,7 +13166,7 @@
 				(justify left bottom mirror)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13125,7 +13179,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13138,7 +13192,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13156,6 +13210,12 @@
 		(path "/caac2d4a-4b22-4b84-8ea0-7ba7faa94481")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
@@ -13402,6 +13462,12 @@
 		(path "/aee999c3-a802-4f40-a197-a6b361d77946")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "+" "-")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13622,7 +13688,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(S3-B)")
-			(pinfunction "+")
+			(pinfunction "+_+")
 			(pintype "power_out")
 			(uuid "ea299ede-a740-4646-80f0-7fd9d87c05d0")
 		)
@@ -13633,13 +13699,12 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "-")
+			(pinfunction "-_-")
 			(pintype "power_out")
 			(uuid "be1a720b-97e4-4e66-959d-b1d2122d5182")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3D_models/2464.step"
-			(hide yes)
 			(offset
 				(xyz 33 1 14.24)
 			)
@@ -13726,6 +13791,12 @@
 		(path "/857f011e-8adc-4319-b0d1-09bd96b25511")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.4 -1.3)
@@ -13925,7 +13996,7 @@
 				(justify bottom mirror)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1"
 			(at -6.000001 -3.3 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13938,7 +14009,7 @@
 				(justify left bottom mirror)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13951,7 +14022,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -13964,7 +14035,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13982,6 +14053,12 @@
 		(path "/8e307a47-74b1-436e-9075-1a47dc716e80")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
@@ -14171,7 +14248,7 @@
 				(justify bottom mirror)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1"
 			(at -6.000001 -3.3 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14184,7 +14261,7 @@
 				(justify left bottom mirror)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -14197,7 +14274,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -14210,7 +14287,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14228,6 +14305,12 @@
 		(path "/400e5e18-9e90-4405-8230-1398b68a75ae")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
@@ -14472,6 +14555,12 @@
 		(path "/e618fd16-bc5a-4554-b825-dbd0fbead7fe")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "G" "D" "S" "4")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15006,7 +15095,7 @@
 			(size 5.7 6.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(Q1-Thermal-Pad4)")
-			(pinfunction "Thermal")
+			(pinfunction "Thermal_4")
 			(pintype "passive+no_connect")
 			(uuid "99107a4d-ae04-4fbb-bc03-ce85ccafc706")
 		)
@@ -15017,7 +15106,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-PadD)")
-			(pinfunction "D")
+			(pinfunction "D_D")
 			(pintype "passive")
 			(uuid "226b61f0-e1aa-44d9-b842-e4ed792c57bc")
 		)
@@ -15028,7 +15117,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-PadG)")
-			(pinfunction "G")
+			(pinfunction "G_G")
 			(pintype "input")
 			(uuid "e5c9b0d7-748b-4821-acfd-d1f253b8af42")
 		)
@@ -15039,7 +15128,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "S")
+			(pinfunction "S_S")
 			(pintype "passive")
 			(uuid "1a8099fe-5899-4ef2-929c-5bb5dd0e5547")
 		)
@@ -15074,7 +15163,7 @@
 				(justify bottom mirror)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1"
 			(at -6.000001 -3.3 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -15087,7 +15176,7 @@
 				(justify left bottom mirror)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/MOS.pdf"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CF_CFM.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -15100,7 +15189,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.47 Ohm, 1/2W, 5%"
+		(property "Description" "1 Ohm, 1/2W, 5%"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -15113,7 +15202,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part #" "KOA Speer -- MOSX1/2CT52RR47J "
+		(property "Part #" "Stackpole -- CFM12JT1R00"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -15131,6 +15220,12 @@
 		(path "/c2e60131-371d-453f-85f3-7eb7c7768959")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P$1" "P$2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.950002 -1.650001)
@@ -15302,6 +15397,195 @@
 			)
 		)
 	)
+	(footprint "TVBG_Library:Cap_Panasonic_Electrolytic_8mm"
+		(layer "B.Cu")
+		(uuid "a10be3ba-1d4a-4b16-b9fa-95773e237ecd")
+		(at 120.15 118 90)
+		(property "Reference" "C2"
+			(at -2.9 4.45 180)
+			(layer "B.SilkS")
+			(uuid "2931bbaa-3750-4a49-b1e2-a3c5662a353c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "330uF"
+			(at 0 -7.75 90)
+			(layer "B.Fab")
+			(uuid "70fd12d6-e75d-4cb1-b0de-649a2a34ec4b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/ECEA0JKA331Q"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "aa2ad256-99ac-4e48-9aec-b08ae2ecb4ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "330uF, 6.3V, electrolytic, 8mm diam x 8mm height"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bd899912-5942-4d20-9942-55c0c35982db")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part #" "Panasonic -- ECE-A0JKA331"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b41bbcc4-095d-425d-980d-ed504e387426")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "CP_*")
+		(path "/5ed1ee57-1c0b-4ee1-bcf7-a48b5cd1ea43")
+		(sheetname "/")
+		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 4 0)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.SilkS")
+			(uuid "ce7fdfcf-1d6d-4eb1-8f8d-8afd1a306366")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "964db96a-1c56-454c-bfb9-c4baa89a6d29")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4 0)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "a030bbba-2172-4651-974f-7543bd8de3af")
+		)
+		(fp_text user "-"
+			(at 1.437199 0.368728 270)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "37e08637-9916-4be2-b302-ccaba8c36922")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+				(justify left bottom mirror)
+			)
+		)
+		(fp_text user "+"
+			(at -3.561911 0.962373 270)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(uuid "702a47c3-35e6-403b-bb01-9da407280f33")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+				(justify left bottom mirror)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at -5.25 -6.25 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "e5d77abf-2855-472f-841c-725cea7e1c13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify left bottom mirror)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at -1.27 0 90)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "Net-(S3-B)")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "54bcb9d6-c210-41e3-a1ff-ad697f9c2b37")
+		)
+		(pad "2" thru_hole circle
+			(at 1.27 0 90)
+			(size 1.6 1.6)
+			(drill 0.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pintype "passive")
+			(solder_mask_margin 0.102)
+			(uuid "51f60dc0-73d2-4111-9df1-89bb3f72bd03")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D8.0mm_H11.5mm_P3.50mm.step"
+			(offset
+				(xyz -1.4 0 0)
+			)
+			(scale
+				(xyz 0.8 0.8 0.65)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "TVBG_Library:ESP32-C3_Super_Mini"
 		(layer "B.Cu")
 		(uuid "abfeeb07-212f-4aa2-b5dc-c5cd5dfe456b")
@@ -15377,7 +15661,15 @@
 		(path "/8c4eae17-285e-43c4-966e-b6feed8fb135")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "16" "15" "14" "13" "12" "11" "10"
+					"9"
+				)
+			)
+		)
+		(attr board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.000001 -11.25)
@@ -16133,7 +16425,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO5-Pad1)")
-			(pinfunction "GPIO5")
+			(pinfunction "GPIO5_1")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
 			(uuid "c23a185a-1051-42c8-9251-b11c14aa1019")
@@ -16145,7 +16437,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO6-Pad2)")
-			(pinfunction "GPIO6")
+			(pinfunction "GPIO6_2")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
 			(uuid "9c3ca036-57bb-4150-a00f-6be85f806df5")
@@ -16157,7 +16449,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO7-Pad3)")
-			(pinfunction "GPIO7")
+			(pinfunction "GPIO7_3")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 0)
 			(uuid "9d496732-d7ab-403e-9047-360b6e10eaa9")
@@ -16169,7 +16461,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO8-Pad4)")
-			(pinfunction "GPIO8")
+			(pinfunction "GPIO8_4")
 			(pintype "bidirectional+no_connect")
 			(uuid "17d08cc8-e65a-439a-ad59-9a66b60a000e")
 		)
@@ -16180,7 +16472,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO9)")
-			(pinfunction "GPIO9")
+			(pinfunction "GPIO9_5")
 			(pintype "bidirectional")
 			(uuid "7e068f6a-70eb-4428-9996-189220e78e98")
 		)
@@ -16191,7 +16483,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO10)")
-			(pinfunction "GPIO10")
+			(pinfunction "GPIO10_6")
 			(pintype "bidirectional")
 			(uuid "2cdaa668-5364-4a08-b25a-42a8cfe176d7")
 		)
@@ -16202,7 +16494,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO20-Pad7)")
-			(pinfunction "GPIO20")
+			(pinfunction "GPIO20_7")
 			(pintype "bidirectional+no_connect")
 			(uuid "53bc7341-b61d-4079-a855-e8640da6a532")
 		)
@@ -16213,7 +16505,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO21-Pad8)")
-			(pinfunction "GPIO21")
+			(pinfunction "GPIO21_8")
 			(pintype "bidirectional+no_connect")
 			(uuid "5d39a5d4-05a6-4e6b-a2eb-9400c65a143b")
 		)
@@ -16224,7 +16516,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO0-Pad9)")
-			(pinfunction "GPIO0")
+			(pinfunction "GPIO0_9")
 			(pintype "bidirectional+no_connect")
 			(uuid "ad2ef3b8-f264-4fac-8bff-fe56f91fcde5")
 		)
@@ -16235,7 +16527,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO1-Pad10)")
-			(pinfunction "GPIO1")
+			(pinfunction "GPIO1_10")
 			(pintype "bidirectional+no_connect")
 			(uuid "5a20bf76-f8ed-4960-8082-a09099d8ff1f")
 		)
@@ -16246,7 +16538,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-GPIO2-Pad11)")
-			(pinfunction "GPIO2")
+			(pinfunction "GPIO2_11")
 			(pintype "bidirectional+no_connect")
 			(uuid "fe192c46-db19-4bf1-8467-7e1a1f38db73")
 		)
@@ -16257,7 +16549,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO3)")
-			(pinfunction "GPIO3")
+			(pinfunction "GPIO3_12")
 			(pintype "bidirectional")
 			(uuid "0422012c-8382-41e3-b5bc-94250f9e79ca")
 		)
@@ -16268,7 +16560,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(MOD1-GPIO4)")
-			(pinfunction "GPIO4")
+			(pinfunction "GPIO4_13")
 			(pintype "bidirectional")
 			(uuid "79110d76-c2c4-4f11-8821-132464f71825")
 		)
@@ -16279,7 +16571,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(MOD1-3V3-Pad14)")
-			(pinfunction "3V3")
+			(pinfunction "3V3_14")
 			(pintype "power_in+no_connect")
 			(thermal_bridge_angle 0)
 			(uuid "1cf88ed6-626c-4b70-9f51-e9618d99e9b0")
@@ -16291,7 +16583,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_15")
 			(pintype "power_in")
 			(thermal_bridge_angle 0)
 			(uuid "3e2e8a17-82be-4bae-9a6f-ce67025033d0")
@@ -16303,195 +16595,12 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+4.5V")
-			(pinfunction "5V")
+			(pinfunction "5V_16")
 			(pintype "power_in")
 			(thermal_bridge_angle 0)
 			(uuid "b0f68384-bc6a-4643-93db-f3a80193eaa3")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "TVBG_Library:Cap_Panasonic_Electrolytic_8mm"
-		(layer "B.Cu")
-		(uuid "b1f159bd-07a7-4e9c-8628-dd44aede320d")
-		(at 120.142 117.602 90)
-		(property "Reference" "C2"
-			(at -3.748 3.808 180)
-			(layer "B.SilkS")
-			(uuid "054047a9-fc25-495e-b13e-52d2be1996f2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "330uF"
-			(at 0.002 -0.092 180)
-			(layer "B.SilkS")
-			(uuid "7c3c4fc5-2547-487d-8295-0968a1240479")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/ECEA0JKA331Q"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "2756bc63-38e8-4420-b917-bce27f43fa34")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "330uF, 6.3V, electrolytic, 8mm diam x 8mm height"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "740f289d-66ab-4455-9106-87ce3ac59e76")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Part #" "Panasonic -- ECE-A0JKA331Q"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "cde93c58-be83-4c10-b115-c999857b7cad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "CP_*")
-		(path "/5ed1ee57-1c0b-4ee1-bcf7-a48b5cd1ea43")
-		(sheetname "/")
-		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 4 0)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.SilkS")
-			(uuid "734e58af-c650-4c1f-9b8c-98c80be4a3bb")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 4.250001 0.000001)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "306b311d-f514-4d9e-abca-87344b74e91a")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 4 0)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(fill no)
-			(layer "B.Fab")
-			(uuid "1200157a-ce69-4d63-8dad-204c27e88234")
-		)
-		(fp_text user "-"
-			(at 1.437199 0.408 270)
-			(unlocked yes)
-			(layer "B.SilkS")
-			(uuid "762b200e-7901-4480-aa9e-89a0f0bfddd8")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.3)
-					(bold yes)
-				)
-				(justify left bottom mirror)
-			)
-		)
-		(fp_text user "+"
-			(at -3.56191 0.962374 270)
-			(unlocked yes)
-			(layer "B.SilkS")
-			(uuid "b0af2bd1-cef3-4556-94d2-bc97d8358ded")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.3)
-					(bold yes)
-				)
-				(justify left bottom mirror)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at -5.25 -6.250001 270)
-			(unlocked yes)
-			(layer "B.Fab")
-			(uuid "68627753-5e18-482e-8f41-95eb7b229cae")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify left bottom mirror)
-			)
-		)
-		(pad "1" thru_hole rect
-			(at -2.5 0 90)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "Net-(S3-B)")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "87c5b9cb-b773-4201-98c4-bc120dfbfc1a")
-		)
-		(pad "2" thru_hole circle
-			(at 2.5 0 90)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "GND")
-			(pintype "passive")
-			(solder_mask_margin 0.102)
-			(uuid "1e975297-39dd-4610-bb59-ff763f0e5143")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/3D_models/ECE-A0JKA331Q.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
-			)
-		)
 	)
 	(footprint "TVBG_Library:Cap_Kemet_2.54_MLCC_through-hole"
 		(layer "B.Cu")
@@ -16568,6 +16677,12 @@
 		(path "/95015940-98a7-40f6-8a0a-278e3691a1a3")
 		(sheetname "/")
 		(sheetfile "tvbgone_kit_v2.0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.540002 -1.589999)
@@ -16843,7 +16958,7 @@
 		(layer "Edge.Cuts")
 		(uuid "827ad4ff-aac2-40a0-9d3a-0ecbe8e70c82")
 	)
-	(gr_text "kit V2.0 r2"
+	(gr_text "kit V2.0 r3"
 		(at 161.3 98.5 0)
 		(layer "F.Mask")
 		(uuid "cef9ca8c-014b-4a25-a8e8-b2d3b3548ece")
@@ -16855,7 +16970,7 @@
 			)
 			(justify left bottom)
 		)
-		(render_cache "kit V2.0 r2" 0
+		(render_cache "kit V2.0 r3" 0
 			(polygon
 				(pts
 					(xy 161.549457 98.021563) (xy 161.666461 97.908991) (xy 161.952928 98.309843) (xy 161.975882 98.328401)
@@ -17018,32 +17133,45 @@
 			)
 			(polygon
 				(pts
-					(xy 168.621313 98.191965) (xy 168.634556 98.150527) (xy 168.651702 98.111125) (xy 168.697713 98.037678)
-					(xy 168.762937 97.96628) (xy 168.854684 97.891669) (xy 168.927795 97.842496) (xy 169.029419 97.780636)
-					(xy 169.087509 97.743003) (xy 169.141326 97.703914) (xy 169.189205 97.661538) (xy 169.229487 97.614047)
-					(xy 169.249604 97.58181) (xy 169.265904 97.546578) (xy 169.27715 97.511386) (xy 169.284602 97.473026)
-					(xy 169.288145 97.418808) (xy 169.286017 97.379108) (xy 169.27972 97.341648) (xy 169.269607 97.307148)
-					(xy 169.255722 97.274986) (xy 169.217413 97.218362) (xy 169.16514 97.171669) (xy 169.098564 97.135492)
-					(xy 169.017124 97.111235) (xy 168.92054 97.100962) (xy 168.90469 97.100773) (xy 168.848961 97.102883)
-					(xy 168.79827 97.109054) (xy 168.753514 97.118718) (xy 168.712889 97.131776) (xy 168.676196 97.147954)
-					(xy 168.642994 97.167073) (xy 168.587461 97.211666) (xy 168.54076 97.269885) (xy 168.504214 97.341285)
-					(xy 168.485838 97.40027) (xy 168.482748 97.423443) (xy 168.484821 97.439769) (xy 168.490733 97.453884)
-					(xy 168.513036 97.475794) (xy 168.54125 97.486848) (xy 168.564356 97.488393) (xy 168.584684 97.486171)
-					(xy 168.602967 97.479211) (xy 168.616012 97.469331) (xy 168.626197 97.455504) (xy 168.632127 97.440436)
-					(xy 168.647595 97.390521) (xy 168.669466 97.343534) (xy 168.688322 97.315383) (xy 168.711457 97.290097)
-					(xy 168.73507 97.271243) (xy 168.762625 97.255341) (xy 168.792368 97.243468) (xy 168.826217 97.234865)
-					(xy 168.896966 97.228659) (xy 168.939047 97.23078) (xy 168.977862 97.237032) (xy 169.011881 97.246796)
-					(xy 169.042364 97.260082) (xy 169.067869 97.275864) (xy 169.089728 97.294573) (xy 169.107006 97.315059)
-					(xy 169.120573 97.337983) (xy 169.130048 97.362575) (xy 169.135644 97.389273) (xy 169.137221 97.414174)
-					(xy 169.135047 97.449494) (xy 169.128423 97.481678) (xy 169.118298 97.509032) (xy 169.104182 97.53483)
-					(xy 169.06181 97.585493) (xy 168.989495 97.644609) (xy 168.921616 97.690968) (xy 168.815358 97.760553)
-					(xy 168.751802 97.804523) (xy 168.695437 97.848924) (xy 168.648905 97.891047) (xy 168.608092 97.933899)
-					(xy 168.57408 97.975816) (xy 168.544819 98.018711) (xy 168.52278 98.05743) (xy 168.498648 98.106475)
-					(xy 168.476824 98.164198) (xy 168.467719 98.20027) (xy 168.464277 98.233541) (xy 168.466398 98.258465)
-					(xy 168.472648 98.279475) (xy 168.481783 98.295198) (xy 168.49407 98.307681) (xy 168.527064 98.322809)
-					(xy 168.556632 98.325896) (xy 169.257383 98.325896) (xy 169.27275 98.323838) (xy 169.285804 98.318029)
-					(xy 169.305278 98.296327) (xy 169.314214 98.261692) (xy 169.31434 98.256647) (xy 169.312212 98.236768)
-					(xy 169.30591 98.219639) (xy 169.296686 98.207101) (xy 169.284223 98.197998) (xy 169.257383 98.191965)
+					(xy 168.853845 97.770225) (xy 168.863114 97.770225) (xy 168.91339 97.772365) (xy 168.959245 97.778746)
+					(xy 168.997769 97.788429) (xy 169.032249 97.801679) (xy 169.06066 97.817211) (xy 169.085368 97.835769)
+					(xy 169.105356 97.856201) (xy 169.121834 97.879307) (xy 169.143725 97.932495) (xy 169.151125 97.995502)
+					(xy 169.149009 98.027998) (xy 169.142798 98.058334) (xy 169.132773 98.086246) (xy 169.119105 98.111849)
+					(xy 169.08108 98.156269) (xy 169.028837 98.190993) (xy 168.962325 98.214336) (xy 168.88226 98.223792)
+					(xy 168.873927 98.223869) (xy 168.82478 98.221746) (xy 168.781036 98.215479) (xy 168.744723 98.206003)
+					(xy 168.712588 98.193165) (xy 168.685276 98.177697) (xy 168.661372 98.159327) (xy 168.622404 98.113681)
+					(xy 168.59673 98.063408) (xy 168.58611 98.045014) (xy 168.573232 98.031629) (xy 168.559516 98.023572)
+					(xy 168.544066 98.019392) (xy 168.533526 98.018675) (xy 168.502764 98.023309) (xy 168.483336 98.030812)
+					(xy 168.467591 98.041491) (xy 168.456576 98.054091) (xy 168.44969 98.068805) (xy 168.447351 98.085035)
+					(xy 168.453463 98.112775) (xy 168.470738 98.150533) (xy 168.491927 98.185884) (xy 168.515563 98.216711)
+					(xy 168.542903 98.244947) (xy 168.572772 98.269432) (xy 168.606268 98.291122) (xy 168.642822 98.309523)
+					(xy 168.683076 98.324846) (xy 168.72722 98.336924) (xy 168.775274 98.345533) (xy 168.870838 98.351688)
+					(xy 168.926643 98.349566) (xy 168.979028 98.343314) (xy 169.026912 98.333347) (xy 169.071296 98.319736)
+					(xy 169.111168 98.303072) (xy 169.147497 98.283228) (xy 169.17949 98.260895) (xy 169.207906 98.235801)
+					(xy 169.232258 98.208578) (xy 169.252973 98.17895) (xy 169.269846 98.147302) (xy 169.282962 98.113541)
+					(xy 169.297599 98.039914) (xy 169.298959 98.007861) (xy 169.296805 97.961116) (xy 169.290324 97.917959)
+					(xy 169.280433 97.881217) (xy 169.266782 97.847635) (xy 169.250381 97.818803) (xy 169.230573 97.792869)
+					(xy 169.181991 97.750698) (xy 169.119433 97.719673) (xy 169.03981 97.700059) (xy 169.034053 97.699229)
+					(xy 169.075729 97.686909) (xy 169.113177 97.671233) (xy 169.144622 97.653415) (xy 169.172322 97.632684)
+					(xy 169.195499 97.609957) (xy 169.215204 97.584582) (xy 169.244126 97.52629) (xy 169.25959 97.455776)
+					(xy 169.26195 97.410681) (xy 169.259826 97.372933) (xy 169.253555 97.337167) (xy 169.24339 97.303758)
+					(xy 169.229444 97.272507) (xy 169.190637 97.216711) (xy 169.13744 97.170214) (xy 169.06979 97.134133)
+					(xy 168.987747 97.110266) (xy 168.891942 97.100835) (xy 168.883129 97.100773) (xy 168.828515 97.102867)
+					(xy 168.778844 97.108927) (xy 168.734178 97.118538) (xy 168.693913 97.131404) (xy 168.65746 97.147377)
+					(xy 168.625019 97.166004) (xy 168.569474 97.21164) (xy 168.525447 97.268273) (xy 168.49504 97.328939)
+					(xy 168.488927 97.356679) (xy 168.491004 97.371605) (xy 168.496939 97.384738) (xy 168.519958 97.405915)
+					(xy 168.538161 97.413771) (xy 168.573625 97.41995) (xy 168.591901 97.417696) (xy 168.608344 97.410519)
+					(xy 168.620359 97.400133) (xy 168.630224 97.385394) (xy 168.632127 97.381396) (xy 168.647538 97.346535)
+					(xy 168.666466 97.315712) (xy 168.68619 97.292212) (xy 168.709135 97.272055) (xy 168.7339 97.256241)
+					(xy 168.761946 97.243595) (xy 168.828913 97.22818) (xy 168.87695 97.225569) (xy 168.919366 97.227697)
+					(xy 168.958277 97.233998) (xy 168.991796 97.243731) (xy 169.021767 97.257005) (xy 169.046727 97.272756)
+					(xy 169.068175 97.291496) (xy 169.08533 97.312242) (xy 169.098952 97.335583) (xy 169.114932 97.389037)
+					(xy 169.117206 97.421495) (xy 169.115081 97.454933) (xy 169.108803 97.485935) (xy 169.098853 97.513644)
+					(xy 169.085248 97.53884) (xy 169.048007 97.580947) (xy 168.997164 97.612338) (xy 168.931943 97.631906)
+					(xy 168.864658 97.63757) (xy 168.852367 97.63757) (xy 168.769147 97.634481) (xy 168.753704 97.635911)
+					(xy 168.740578 97.641131) (xy 168.720733 97.661639) (xy 168.710941 97.694881) (xy 168.710645 97.702319)
+					(xy 168.712784 97.722805) (xy 168.719159 97.7413) (xy 168.728571 97.755275) (xy 168.741382 97.765539)
+					(xy 168.769147 97.77177)
 				)
 			)
 		)
@@ -17345,6 +17473,14 @@
 		(uuid "4955c20f-e67c-4897-b80d-d01bdec25535")
 	)
 	(segment
+		(start 119.448 111.574)
+		(end 120.15 112.276)
+		(width 0.508)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "49be8ad3-b8e8-40ed-aeab-47c7f4c4e98d")
+	)
+	(segment
 		(start 118.11 106.875)
 		(end 116.019 106.875)
 		(width 0.508)
@@ -17377,20 +17513,20 @@
 		(uuid "57e68609-710f-4dc6-a4a5-6f66d7c4ff78")
 	)
 	(segment
+		(start 120.15 112.276)
+		(end 120.15 116.73)
+		(width 0.508)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "59978198-ff53-4055-8938-d11b5ac0e74f")
+	)
+	(segment
 		(start 157.68 115.655)
 		(end 170.18 115.655)
 		(width 0.508)
 		(layer "B.Cu")
 		(net "GND")
 		(uuid "5bf2db7e-8e0d-41cc-93ae-1fa94a3a14a8")
-	)
-	(segment
-		(start 116.72 111.574)
-		(end 119.448 111.574)
-		(width 0.508)
-		(layer "B.Cu")
-		(net "GND")
-		(uuid "63f8b741-1957-409d-9cde-7e69b6287a11")
 	)
 	(segment
 		(start 153.67 127.762)
@@ -17415,14 +17551,6 @@
 		(layer "B.Cu")
 		(net "GND")
 		(uuid "79b552de-702c-445b-afff-91517832b5e8")
-	)
-	(segment
-		(start 119.448 111.574)
-		(end 120.142 112.268)
-		(width 0.508)
-		(layer "B.Cu")
-		(net "GND")
-		(uuid "866b18a3-68c4-446f-aede-af8f4dc73af9")
 	)
 	(segment
 		(start 138.303 122.428)
@@ -17481,14 +17609,6 @@
 		(uuid "a282eb56-2b88-4745-8350-42d621d9b700")
 	)
 	(segment
-		(start 120.142 112.268)
-		(end 120.142 115.102)
-		(width 0.508)
-		(layer "B.Cu")
-		(net "GND")
-		(uuid "a68f673d-25ba-44f5-93c1-423cdcafe839")
-	)
-	(segment
 		(start 118.11 108.458)
 		(end 118.11 106.875)
 		(width 0.508)
@@ -17527,6 +17647,14 @@
 		(layer "B.Cu")
 		(net "GND")
 		(uuid "b9bef737-e72e-49ee-96f4-f4b1239a358d")
+	)
+	(segment
+		(start 116.72 111.574)
+		(end 119.448 111.574)
+		(width 0.508)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "bf35c419-d6c9-4c51-8853-c3978ded81fc")
 	)
 	(segment
 		(start 154.813 128.905)
@@ -17825,44 +17953,28 @@
 		(uuid "ee14c9d8-a1b5-4930-9158-67e882eea096")
 	)
 	(segment
-		(start 122.388 117.856)
-		(end 120.142 120.102)
+		(start 118.110001 102.774999)
+		(end 119.538999 102.774999)
 		(width 0.508)
 		(layer "F.Cu")
 		(net "Net-(S3-B)")
-		(uuid "01f04a92-317d-4644-9257-19c0f831e150")
+		(uuid "02ea6363-2108-4a02-a16e-497e316c207c")
+	)
+	(segment
+		(start 122.428 116.992)
+		(end 120.15 119.27)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "Net-(S3-B)")
+		(uuid "22eb576a-2b73-46de-99b0-664f89e72d9b")
 	)
 	(segment
 		(start 122.428 105.664)
-		(end 122.428 117.856)
+		(end 122.428 116.992)
 		(width 0.508)
 		(layer "F.Cu")
 		(net "Net-(S3-B)")
-		(uuid "2c82bd77-fda5-424b-83e6-d82fb1b316d9")
-	)
-	(segment
-		(start 119.466002 124.373998)
-		(end 116.72 124.373998)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "Net-(S3-B)")
-		(uuid "57088729-946e-4227-8876-7889a3078ea4")
-	)
-	(segment
-		(start 120.142 123.698)
-		(end 119.466002 124.373998)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "Net-(S3-B)")
-		(uuid "584578d4-4fbb-49ba-923c-d0ccbbb10ecc")
-	)
-	(segment
-		(start 122.428 117.856)
-		(end 122.388 117.856)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "Net-(S3-B)")
-		(uuid "8362c996-e8d0-4b52-8285-e0860d9c9a80")
+		(uuid "24daeb58-e70d-40e7-9e09-6ade703ca215")
 	)
 	(segment
 		(start 116.72 128.136004)
@@ -17873,6 +17985,14 @@
 		(uuid "8d4deabf-9d25-408f-95af-9c2931a16001")
 	)
 	(segment
+		(start 120.15 123.69)
+		(end 120.15 119.27)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "Net-(S3-B)")
+		(uuid "a017a114-8514-419b-be84-9bbc5ccebb7c")
+	)
+	(segment
 		(start 116.72 124.373998)
 		(end 116.72 128.136004)
 		(width 0.508)
@@ -17881,20 +18001,12 @@
 		(uuid "a8a3eadb-efd8-4f80-b066-7ac7e433f740")
 	)
 	(segment
-		(start 118.110001 102.774999)
-		(end 119.538999 102.774999)
+		(start 119.466002 124.373998)
+		(end 120.15 123.69)
 		(width 0.508)
 		(layer "F.Cu")
 		(net "Net-(S3-B)")
-		(uuid "ceae7c38-04d7-4a93-8b2c-565ad57e2b44")
-	)
-	(segment
-		(start 120.142 120.102)
-		(end 120.142 123.698)
-		(width 0.508)
-		(layer "F.Cu")
-		(net "Net-(S3-B)")
-		(uuid "d428d4fc-502b-4b54-9fe9-1db2ea69c5e5")
+		(uuid "b36ce8d5-43ac-4955-b27d-14e98f935268")
 	)
 	(segment
 		(start 119.538999 102.774999)
@@ -17902,7 +18014,15 @@
 		(width 0.508)
 		(layer "F.Cu")
 		(net "Net-(S3-B)")
-		(uuid "dd014d51-b184-4713-8dc8-7fa35ea1f612")
+		(uuid "bac98715-92a3-4515-a6e8-a16efa639258")
+	)
+	(segment
+		(start 116.72 124.373998)
+		(end 119.466002 124.373998)
+		(width 0.508)
+		(layer "F.Cu")
+		(net "Net-(S3-B)")
+		(uuid "dac78023-98d3-46e2-999a-3c777e1d82be")
 	)
 	(segment
 		(start 145.865 94.780001)

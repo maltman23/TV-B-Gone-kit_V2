@@ -1,0 +1,15 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description,Part #
+B1,1,Battery Holder for 3xAA,BatteryHolder_Eagle_Plastic_Devices_3xAA,,,,tht,"Battery holder for 3xAA, two pins",Keystone -- 2464
+C1,1,0.1uF,Cap_Kemet_2.54_MLCC_through-hole,,,,tht,"0.1uF, ceramic, multilayer, 100V, 0.1"" lead-spacing",Kemet -- C320C104M5R5TA7303
+C2,1,330uF,Cap_Panasonic_Electrolytic_8mm,,,,tht,"330uF, 6.3V, electrolytic, 8mm diam x 8mm height",Panasonic -- ECE-A0JKA331
+"LED1, LED2",2,IR333C/H0/L10,LED_IR_5MM,,,,tht,"IR LED, 5mm, 40 deg, colorless",Everlight -- IR333C/H0/L10/TR1-7(R)
+"LED3, LED4",2,IR333-A,LED_IR_5MM,,,,tht,"IR LED, 5mm, 20 deg, blue tint",[LED3]Everlight -- IR333-A; [LED4]Everlight -- IR333C/H0/L10/TR1-7(R)
+MOD1,1,ESP32-C3 Super Mini,ESP32-C3_Super_Mini,,,,tht,ESP32-C3 dev board from Aliexpress,"Shop1102186190 Aliexpress Store, with Color = 10PCS C3 MINI"
+Q1,1,IRLU024NPBF,TO-251AA_Horizontal_TabDown,,,,tht,"Power N-MOSFET transistor, 3.3V logic level",Infineon -- IRLU024NPBF
+"R1, R2, R3, R4",4,1,Resistor_THT_0.5W,,,,tht,"1 Ohm, 1/2W, 5%",Stackpole -- CFM12JT1R00
+R5,1,56,Resistor_THT_0.25W,,,,tht,"56 Ohm, 1/4W, 5%",Stackpole -- CF14JT56R0 
+R6,1,47K,Resistor_THT_0.25W,,,,tht,"47K, 1/4W, 5%",Stackpole -- CF14JT47K0
+S1,1,NA,TACTILE_SWITCH_12MM,,,,tht,"Description SPST Tact Switch, 12x12mm, Yellow",Omron -- B3F-4005
+S2,1,EU,TACTILE_SWITCH_12MM,,,,tht,"Description SPST Tact Switch, 12x12mm, Ivory",Omron -- B3F-4000
+S3,1,Power,C&K_SPST_OS102011MS2QS1,,,,tht,"Switch, single pole double throw, with 2 PCB-mounting pins",OS102011MS2QN1
+U1,1,TSOP38238,Vishay_MINICAST-3Pin,,,,tht,"IR Receiver Modules for Remote Control Systems, 38KHz",Vishay -- TSOP38238

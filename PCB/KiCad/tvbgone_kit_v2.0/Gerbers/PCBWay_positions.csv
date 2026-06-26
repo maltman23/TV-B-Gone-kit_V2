@@ -1,0 +1,20 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+172.72,-109.474,180.0,bottom,B1,,,BatteryHolder_Eagle_Plastic_Devices_3xAA,Battery Holder for 3xAA,tht
+117.348,-128.778,0.0,bottom,C1,,,Cap_Kemet_2.54_MLCC_through-hole,0.1uF,tht
+120.15,-118.0,90.0,bottom,C2,,,Cap_Panasonic_Electrolytic_8mm,330uF,tht
+123.295,-94.780001,0.0,top,LED1,,,LED_IR_5MM,IR333C/H0/L10,tht
+130.395,-94.780001,0.0,top,LED2,,,LED_IR_5MM,IR333C/H0/L10,tht
+137.495,-94.780001,0.0,top,LED3,,,LED_IR_5MM,IR333-A,tht
+144.595,-94.780001,0.0,top,LED4,,,LED_IR_5MM,IR333-A,tht
+161.29,-96.266,90.0,bottom,MOD1,,,ESP32-C3_Super_Mini,ESP32-C3 Super Mini,tht
+140.97,-129.675001,90.0,bottom,Q1,,,TO-251AA_Horizontal_TabDown,IRLU024NPBF,tht
+126.365,-109.854997,90.0,bottom,R1,,,Resistor_THT_0.5W,1,tht
+132.715,-109.854997,90.0,bottom,R2,,,Resistor_THT_0.5W,1,tht
+138.938,-109.855,90.0,bottom,R3,,,Resistor_THT_0.5W,1,tht
+145.034,-109.854997,90.0,bottom,R4,,,Resistor_THT_0.5W,1,tht
+130.175,-130.175,0.0,bottom,R5,,,Resistor_THT_0.25W,56,tht
+130.175,-125.055,0.0,bottom,R6,,,Resistor_THT_0.25W,47K,tht
+163.93,-113.155,0.0,top,S1,,,TACTILE_SWITCH_12MM,NA,tht
+163.93,-126.405,0.0,top,S2,,,TACTILE_SWITCH_12MM,EU,tht
+118.11,-104.775,90.0,top,S3,,,C&K_SPST_OS102011MS2QS1,Power,tht
+118.05,-88.26,-90.0,top,U1,,,Vishay_MINICAST-3Pin,TSOP38238,tht

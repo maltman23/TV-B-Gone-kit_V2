@@ -5,9 +5,9 @@
 	(uuid "22207677-1d83-4909-980e-d4c7ba119148")
 	(paper "A4")
 	(title_block
-		(title "TV-B-Gone kit V2 -- preliminary PCB r2")
-		(date "2026-05-14")
-		(rev "r2")
+		(title "TV-B-Gone kit V2 -- preliminary PCB r3")
+		(date "2026-06-24")
+		(rev "r3")
 		(company "Cornfield Electronics")
 		(comment 1 "Mitch Altman")
 		(comment 2 "License: CC BY-SA 4.0")
@@ -4718,7 +4718,7 @@
 				)
 			)
 		)
-		(property "Part #" "Panasonic -- ECE-A0JKA331Q"
+		(property "Part #" "Panasonic -- ECE-A0JKA331"
 			(at 104.14 78.74 0)
 			(hide yes)
 			(show_name no)
