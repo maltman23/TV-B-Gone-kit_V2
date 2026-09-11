@@ -22,6 +22,17 @@ Here is a (partial) list of the brands of monitors that the TV-B-Gone kit V2 wil
   
 Acer, Admiral, Aiko, Alleron, Anam National, AOC, Apex, Baur, Bell&Howell, Brillian, Bush, Candle, Citizen, Contec, Cony, Crown, Curtis Mathes, Daiwoo, Dimensia, Electrograph, Electrohome, Emerson, Fisher, Fujitsu, Funai, Gateway, GE, Goldstar, Grundig, Grunpy, Hisense, Hitachi, Infinity, JBL, JC Penney, JVC, LG, Logik, Loewe, LXI, Majestic, Magnavox, Marantz, Maxent, Memorex, Mitsubishi, MGA, Montgomery Ward, Motorola, MTC, NEC, Neckermann, NetTV, Nikko, NTC, Otto Versand, Palladium, Panasonic, Philco, Philips, Pioneer, Portland, Proscan, Proton, Pulsar, Pye, Quasar, Quelle, Radio Shack, Realistic, RCA, Samsung, Sampo, Sansui, Sanyo, Scott, Sears, SEI, Sharp, Signature, Simpson, Sinudyne, Sonolor, Sony, Soundesign, Sylviana, Tatung, TCL, Teknika, Thompson, Toshiba, Universum, Viewsonic, Wards, White Westinghouse, Zenith  
   
+## MicroPython firmware
+
+A [MicroPython module and installation guide](firmware/micropython/README.md)
+are available for the ESP32-C3 Super Mini kit, with the same NA/EU code database,
+button controls and hardware-timed IR transmission.
+
+From this directory, run `just setup` once, then `just build`. After connecting
+a board with MicroPython installed, run `just upload` to build, copy the files
+and restart it. Use `just devices` to list ports or `just upload PORT` to select
+a specific board. Run `just` to list all commands.
+
 ## Future Ideas/Plans  
   
 * Add an IR receiver for learning new OFF-Codes (the r2 of the PCB has pads for the IR receiver, but no firmware, yet) 
