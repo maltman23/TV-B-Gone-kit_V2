@@ -7,8 +7,19 @@ shared codes, carrier frequencies, microsecond timing pairs and sequences.
 
 ## Board and firmware
 
-Use an **ESP32_GENERIC_C3** MicroPython build with `esp32.RMT`, targeting
-MicroPython **v1.26.0 or later** with the documented RMT API. The port uses
+For the **ESP32-C3 Super Mini with 4 MB flash**, use the official
+**ESP32_GENERIC_C3 MicroPython v1.29.0** release:
+
+- [Download ESP32_GENERIC_C3-20260824-v1.29.0.bin](https://micropython.org/resources/firmware/ESP32_GENERIC_C3-20260824-v1.29.0.bin).
+- [Official ESP32-C3 downloads and flashing instructions](https://micropython.org/download/ESP32_GENERIC_C3/).
+
+Choose the full **`.bin`** image, not `.app-bin`, `.elf`, a preview build, or
+the generic ESP32/S2/S3 firmware. This build supports C3 boards with at least
+4 MB flash and revision 3 or newer silicon, including our revision 0.4 board.
+No custom MicroPython build is needed.
+
+The code requires `esp32.RMT`, targeting MicroPython **v1.26.0 or later**
+with the documented RMT API. The port uses
 `RMT(channel, clock_div=80, tx_carrier=...)` and the two-list form of
 `write_pulses`. Newer firmware retains `clock_div` as a compatibility argument.
 On-device smoke checks passed on an ESP32-C3 revision 0.4 (4 MB flash) running
@@ -32,20 +43,56 @@ it during normal power-up/reset; holding it is used to enter the bootloader.
 
 ## Install
 
-### Build and upload with just
+### Download and flash MicroPython with just
+
+Download the v1.29.0 `.bin` linked above. Connect the board with a USB data
+cable and close Thonny or any serial monitor. From the repository root
+(`TV-B-Gone-kit_V2`), run:
+
+```sh
+just setup       # Install mpremote and esptool in .venv-micropython
+just devices     # Find the board's serial port
+just flash /dev/cu.usbmodem1234561 ~/Downloads/ESP32_GENERIC_C3-20260824-v1.29.0.bin
+```
+
+Replace the example port with your board's port (typically `/dev/cu.usbmodem...`
+on macOS or `/dev/ttyACM0` on Linux). `flash` requires an explicit serial port
+and a downloaded image path; it does not accept mpremote's `auto` or `id:...`
+selectors. Quote the image path if it contains spaces. If you previously ran
+`just setup`, run it again to install the newly added esptool dependency.
+
+**`just flash` erases all existing firmware and files on the board**, then
+writes the image at **`0x0`** using esptool. Back up any device files you need
+before running it. A successful flash installs MicroPython; install the
+TV-B-Gone application with `just upload` as described below.
+
+If esptool cannot connect, hold **BOOT (GPIO9)**, press and release **RESET**,
+then release BOOT and retry. Alternatively, hold BOOT while plugging in USB,
+then release it. Run `just devices` again if the port changes. After flashing,
+press RESET with BOOT released (or unplug and reconnect) if the board stays
+in the bootloader. For an unreliable connection, retry at a lower baud rate:
+
+```sh
+just flash /dev/cu.usbmodem1234561 ~/Downloads/ESP32_GENERIC_C3-20260824-v1.29.0.bin 115200
+```
+
+See the [esptool flashing reference](https://docs.espressif.com/projects/esptool/en/latest/esp32c3/esptool/basic-commands.html)
+for `write-flash` and `--erase-all` details.
+
+### Build and upload the application with just
 
 With [just](https://just.systems/) installed, run these commands from the
 repository root (`TV-B-Gone-kit_V2`):
 
 ```sh
-just setup       # One-time: install mpremote in .venv-micropython
+just setup       # One-time: install mpremote and esptool in .venv-micropython
 just build       # Generate data, run host tests, stage build/micropython
 just devices     # List serial devices after plugging in the board
 just upload      # Build, upload all four files, and reset the board
 ```
 
 `build` creates a deployable MicroPython source bundle, not an ESP32 firmware
-image. Install MicroPython on the board first using the instructions below.
+image. Install MicroPython on the board first using `just flash` above.
 Python 3 is required; a `c++` compiler enables the independent waveform parity
 test. `just check` checks the existing data and runs tests without regenerating.
 
@@ -68,10 +115,14 @@ tool is checked before building, and a failed build prevents uploading.
 
 ### Install firmware and copy files manually
 
-Download the firmware and follow the flashing instructions on the official
-[ESP32-C3 download page](https://micropython.org/download/ESP32_GENERIC_C3/).
-Installing MicroPython replaces the Arduino firmware; back up any existing
-device files before erasing flash. No flashing is performed by this repository.
+To flash without `just`, download the same full v1.29.0 `.bin` linked above,
+install [esptool](https://docs.espressif.com/projects/esptool/en/latest/esp32c3/installation.html),
+and run the following with your board's serial port and downloaded image path.
+This erases all existing firmware and device files:
+
+```sh
+python3 -m esptool --chip esp32c3 --port /dev/cu.usbmodem1234561 --baud 460800 write-flash --erase-all 0x0 ~/Downloads/ESP32_GENERIC_C3-20260824-v1.29.0.bin
+```
 
 With MicroPython installed, use Thonny's device file browser or `mpremote`.
 From this `firmware/micropython` directory on your computer:

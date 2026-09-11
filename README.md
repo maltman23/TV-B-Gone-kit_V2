@@ -28,10 +28,12 @@ A [MicroPython module and installation guide](firmware/micropython/README.md)
 are available for the ESP32-C3 Super Mini kit, with the same NA/EU code database,
 button controls and hardware-timed IR transmission.
 
-From this directory, run `just setup` once, then `just build`. After connecting
-a board with MicroPython installed, run `just upload` to build, copy the files
-and restart it. Use `just devices` to list ports or `just upload PORT` to select
-a specific board. Run `just` to list all commands.
+From this directory, run `just setup` once and `just devices` to find the board.
+Follow the installation guide to download MicroPython v1.29.0, then run
+`just flash PORT IMAGE.bin` to erase the board and install it. Run
+`just upload PORT` to build, copy the application files and restart the board.
+For later application updates, run `just upload PORT` again. Run `just` to list
+all commands.
 
 ## Future Ideas/Plans  
   

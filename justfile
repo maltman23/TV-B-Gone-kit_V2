@@ -4,10 +4,16 @@ set positional-arguments
 default:
     @just --list
 
-# Install the upload tool into a local virtual environment (run once).
+# Install the application upload and firmware flashing tools (run once).
 setup:
     python3 -m venv .venv-micropython
-    .venv-micropython/bin/python -m pip install mpremote
+    .venv-micropython/bin/python -m pip install mpremote 'esptool>=5,<6'
+
+# Erase ALL board data and flash a downloaded ESP32_GENERIC_C3 .bin at 0x0.
+# Usage: just flash PORT FIRMWARE.bin [BAUD]
+flash port firmware baud="460800": _require-esptool
+    @test -f "$2" || { echo 'Firmware file not found; download the ESP32_GENERIC_C3 .bin first.' >&2; exit 1; }
+    .venv-micropython/bin/python -m esptool --chip esp32c3 --port "$1" --baud "$3" write-flash --erase-all 0x0 "$2"
 
 # Regenerate the databases, run host checks, and stage the four device files.
 build:
@@ -41,3 +47,7 @@ reset port="auto": _require-mpremote
 _require-mpremote:
     @test -x .venv-micropython/bin/python || { echo 'Run `just setup` first to install mpremote.' >&2; exit 1; }
     @.venv-micropython/bin/python -c 'import mpremote' || { echo 'Run `just setup` to install mpremote.' >&2; exit 1; }
+
+_require-esptool:
+    @test -x .venv-micropython/bin/python || { echo 'Run `just setup` first to install esptool.' >&2; exit 1; }
+    @.venv-micropython/bin/python -c 'import esptool' || { echo 'Run `just setup` to install esptool.' >&2; exit 1; }
