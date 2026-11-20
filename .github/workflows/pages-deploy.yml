@@ -27,10 +27,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build firmware (ESP-IDF v5.5.1, esp32c3)
+      - name: Build firmware (ESP-IDF v6.1, esp32c3)
         uses: espressif/esp-idf-ci-action@v1
         with:
-          esp_idf_version: v5.5.1
+          esp_idf_version: v6.1
           target: esp32c3
           path: firmware/TV-B-Gone-ESP-IDF
           command: idf.py set-target esp32c3 build
